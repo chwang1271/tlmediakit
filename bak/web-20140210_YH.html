@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Amex Publishing Web</title>
+<link rel="stylesheet" href="css/global.css" />
+<!--[if IE 7]>
+<style type="text/css">
+
+	#TLRightContainer {
+    	margin-top:20px;
+        margin-left:50px;
+    }
+	#TLLeftContainerWeb {
+    	margin-left:45px;
+        width:300px;
+    }
+	#TLRightContainer{
+    
+    }
+	.TLWebContentHeader {
+    	margin-left:0px !important;
+        position:relative;
+        width:600px !important;
+    }
+</style>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/jquery.ba-bbq.min.js"></script>
+<script>
+	$(document).ready(function(e){
+		var ua = $.browser;
+		if (ua.mozilla && parseFloat(ua.version.slice(0,3)) < 3.6) {
+			$('.chartHeaderCoverage').attr('style', 'margin-right:10px !important');
+			$('.chartHeaderAudience').attr('style', 'margin-right:10px !important');
+		}
+		if(window.location.hash) {
+			var hash = location.hash.replace("#","");
+			var activeSection = 'TL'+hash
+			$('.TLWebActiveContent').removeClass('TLWebActiveContent').addClass('TLWebHiddenContent');
+			$('#' + activeSection).addClass('TLWebActiveContent');
+			$('.activeTLWebNavButtons').removeClass('activeTLWebNavButtons');
+			$('#' + hash).addClass('activeTLWebNavButtons');
+			$('html,body').animate({scrollTop: 0}, 100);
+		};
+
+		$('#WebSecondaryNav a').click(function(e){
+			var $div = $($(this).attr('href'));
+			var $firstURL = window.location.pathname;
+			var $newURL = $(this).attr('href').replace('TL','');
+			$('.TLWebActiveContent').removeClass('TLWebActiveContent').addClass('TLWebHiddenContent');
+			$div.addClass('TLWebActiveContent');
+			$('.activeTLWebNavButtons').removeClass('activeTLWebNavButtons');
+			$(this).addClass('activeTLWebNavButtons');
+				if ( $.browser.msie ) {
+					$('html,body').animate({scrollTop: 0}, 100);
+					location.href = $firstURL+$newURL;
+					}
+				else {
+					history.replaceState(null, '', $firstURL+$newURL);
+					}
+			return false;
+			});
+			
+			$('#TLWebHeader').click(function() {
+				$('.TLWebActiveContent').removeClass('TLWebActiveContent');
+				$('#TLWebLanding').addClass('TLWebActiveContent');
+				$('.activeTLWebNavButtons').removeClass('activeTLWebNavButtons');
+			});
+			$('#TLInternalWebLinkActive').click(function() {
+				return false;
+			});
+			//$(window).trigger( 'hashchange' );
+	});
+</script>
+</head>
+<body>
+	<section id="TLMainWrapper">
+    	<header>
+        	<section id="TLLogo">
+            	<a id="TLHomeButton" href="index.html">Travel and Leisure Home</a>
+            </section>
+            <!-- /#T+LLogo -->
+            <section id="TLMediaKit">
+            	<a id="TLMediaKitButton" href="index.html">Travel and Leisure Media Kit</a>
+            </section>
+            <!--/#T+LMediaKit -->
+        </header>
+        <section id="TLWebConatiner">
+        	<article id="TLLeftContainer">
+            	<article id="TLLeftContainerWeb">
+                    <a id="TLWebHeader" href="#">Web</a>
+                    <ul id="WebSecondaryNav">
+                        <li><a href="#TLWebAudience" class="TLWebNavButtons" id="WebAudience">Audience</a></li>
+                        <li><a href="http://direct2time.timeinc.com/online/prop/amex/custom.html" class="TLWebNavButtons" id="WebCustomRichMedia" target="_blank">Custom Rich Media</a></li>
+                        <li><a href="#TLWebMediaTargeting" class="TLWebNavButtons" id="WebMediaTargeting">Media Targeting</a></li>
+                        <li><a href="http://direct2time.timeinc.com/online/prop/amex/" target="_blank" class="TLWebNavButtons" id="WebAdSpecs">Ad Specs</a></li>
+                        <li><a href="#TLWebContacts" class="TLWebNavButtons" id="WebContacts">Contacts</a></li>
+                    </ul>
+                    <ul id="TLInternalNav">
+                    	<li><a id="TLInternalPrintLink" href="print.html">Print</a></li>
+                        <li><a id="TLInternalWebLinkActive" href="">Web</a></li>
+                        <li><a id="TLInternalTabletLink" href="tablet.html">Tablet</a></li>
+                    </ul>
+                </article>
+                <!--/#TLLeftContainerPrint -->
+            </article>
+            <!--/#TLLeftContainer -->
+            <article id="TLRightContainer" class="TLWebRight">
+            	<article id="TLWebLanding" class="TLWebActiveContent">
+                	
+                </article>
+                <!--/#TLWebLanding-->
+                <article id="TLWebAudience" class="TLWebHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrWebAudience">Audience</h2>
+                    <p class="TLWebAudience">
+                    <span class="webRed">Website Audience</span>
+                    <br>
+                    <strong>Female/Male:</strong> 43% / 57%<br>
+                    <strong>Median HHI:</strong> $102,433<br>
+                    <strong>Median Age:</strong> 44<br>
+                    <br>
+                    <!-- <strong>Source:</strong> @Plan Q2 2013<br>
+                    <br> -->
+                    <span class="webRed">Website Statistics</span>
+                    <br>
+                    <strong>Monthly Page Views:</strong> 38 Million<br>
+                    <strong>Monthly Unique Users:</strong> 2.5 Million<br>
+                    <br>
+                    <!-- <strong>Source:</strong> Adobe Site Catalyst, November 2013<br>
+                    <br> -->
+                    <span class="webRed">Social Media</span>
+                    <br>
+                    Reach more than 700,000 engaged users through Travel + Leisure social media channels – Facebook,<br>Twitter, Foursquare, Instagram, Foodspotting, Pinterest and Google+
+                    <br>
+                    <br>
+                    <span style="margin:0px 0px -10px 0px !important; display:block;">T+L offers several innovative ways to interact with this powerful audience.</span>
+                    </p>
+                    <ul> 
+                      <li><span class="webAudienceBlack">Sponsored Posts</span></li>
+                      <li><span class="webAudienceBlack">Custom Hashtags</span></li>
+                      <li><span class="webAudienceBlack">Facebook Chats</span></li>
+                      <li><span class="webAudienceBlack">Twitter Parties</span></li>
+                      <li><span class="webAudienceBlack">Custom Pinterest Board</span></li>
+                      <li><span class="webAudienceBlack">Foursquare Sponsored lists</span></li>
+                      <li><span class="webAudienceBlack">Instagram Photo contest</span></li>
+				  	</ul>
+                  	<strong>Source:</strong> 2013 Fall MRI; T+L Digital Subscriber Survey, Q2 2012; Omniture February 2012 - February 2013<br>
+                    <br><br>
+                  <p class="TLWebAudience">
+                  <a href="termsofuse.html" target="_blank">View Advertiser Terms and Conditions</a>
+                  </p>
+              </article>
+                <!--/#TLWebAudience-->
+                <article id="TLWebCustomRichMedia" class="TLWebHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrCustomRichMedia">Custom Rich Media</h2>
+                    <p class="TLCustomRichMedia">
+                    Go above and beyond the standard banner with rich media units designed and developed by the American Express Publishing Digital Creative Services team.
+					<br>
+                    <br>
+                    <span class="webRed">Dolcetto</span>
+                    <br>
+                    The tiny (but sweet and powerful) Dolcetto launches as a 728x90 and on hover expands down to reveal content such as: video, photo gallery, product carousel, or download PDF & Print. <a href="http://demo.pointroll.com/PointRoll/AdDemo/CreativeManager/DunkinDonuts/1691541/DD_728x90_EXP_DERIVE0.17959918826818466.asp" target="_blank">View demo</a>
+                    <br>
+                    <br>
+                    <span class="webRed">Video Break</span>
+                    <br>
+                    The Video Break launches as a 300x250 and expands left on hover to play the video. Can contain (1-5) 30-second videos. <a href="http://demo.pointroll.com/PointRoll/AdDemo/CreativeManager/TheHongKongandShanghaiHotelsLtd/1689380/Peninsula_300X250_EXP_Derive0.22312297904863954.asp" target="_blank">View demo</a> 
+                    <br>
+                    <br>
+                    <span class="webRed">Flipbook</span>
+                    <br>
+                    The Flipbook launches as a 300x600 and expands left on click. The user then "flips" through up to four  spreads using an animated page-turn. <a href="http://demo.pointroll.com/PointRoll/AdDemo/CreativeManager/StLucia/1697864/StLucia_300x600_Exp_DERIVE0.539087500423193.asp" target="_blank">View demo</a> 
+                    <br>
+                    <br>
+                    <span class="webRed">Quattro</span>
+                    <br>
+                    The unit loads as a 300x600 and expands left on hover to reveal four sequential content spreads. Can include: video (1-2), photo gallery, product carousel, and download PDF & Print. <a href="http://demo.pointroll.com/PointRoll/AdDemo/CreativeManager/GreaterPhiladelphiaTourismMarketingCorporation/1717044/Philadelphia_300x600_Exp_DERIVE0.05677061015740037.asp" target="_blank">View demo</a>
+                    <br>
+                    <br>
+                    <span class="webRed">Filmstrip</span>
+                    <br>
+                    This unit loads as a 300x600 banner and is viewable in five different segments that can include: video (1-2), photo gallery, product carousel, and download PDF & Print. The user scrolls between segments using the  "back" or "next" buttons.  
+                    <br>
+                    <br>
+                    <span class="webRed">Sidekick</span>
+                    <br>
+                    The Sidekick launches as a 300x600 banner. On user click the sidekick pushes the website horizontally to the left and a 750x600 unit appears in the right gutter of the page. Can include: video (1-2), photo gallery, product carousel, and download PDF & Print. <a href="http://adplatform.unicast.com/fuse/external/preview.jsp?enc=uogMGoeVXfVWMtofUdfdF" target="_blank">View demo</a>
+                    <br>
+                    <br>
+                    <span class="webRed">Pushdown</span>
+                    <br>
+                    This pushdown auto-expands downward pushing the site content down with it. After 8 seconds the unit auto-collapses into a persistent ad on the page, which can be expanded by our users for additional information or functionality. Can include: video (1-2), photo gallery, product carousel, and download PDF & Print. <a href="http://cdn.eyewonder.com/100125/marketing/demos/pushdown/AMEX_Publishing_Iconic_Hotels_Asia_2011/index.html" target="_blank">View demo</a>
+                    <br>
+                    <br>
+                    <span class="webRed">Interstitial/Video Interstitial</span>
+                    <br>
+                    Delivered as a full-page takeover, the Interstitial is served within the site as a user clicks from one page to another. This full-page ad will timeout after 15 seconds before revealing the website. <a href="http://www.travelandleisure.com/travel-blog/carry-on?testads=4" target="_blank">View demo</a>
+                    <br>
+                    <br>
+                    <span class="webRed">Docking Unit</span>
+                    <br>
+                    The Docking Unit loads as an adhesion banner 'docked' at the foot of the user's browser, resulting in consistent above-the-fold placement. Upon user engagement it expands upward taking over the edit stage. <a href="http://www2.mediamind.com/creative_zone/Amex_Luxury_Docking_9731845/index.html" target="_blank">View demo</a>
+                    <br>
+                    <br>
+                    <span class="webRed">Floating Canvas</span>
+                    <br>
+                    This unit auto-loads over the website as a large canvas revealing interactive content such as photo galleries and video. After 8 seconds the canvas auto-collapses into a persistent ad on the page, which can be expanded by our users for additional information or functionality. Can contain up to full-canvas images. <a href="http://demo.pointroll.com/PointRoll/AdDemo/CreativeManager/ShangriLaGroup/1709112/300X250_AutoEXP_Derive_CUSTOMDEMO0.24883792223408818.asp" target="_blank">View demo</a>
+                    </p>
+                </article>
+                <!--/#TLWebCustomRichMedia-->
+                <article id="TLWebMediaTargeting" class="TLWebHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrWebMediaTargeting">Media Targetting</h2>
+                    <p class="TLWebMediaTargeting">
+                    	<span class="webRed">Run of Site</span>
+						<br>
+                        Target brand campaigns and promotions across award-winning content.
+                        <br>
+                        <br>
+                        <span class="webRed">Targeted Media</span>
+                        <br>
+                        Leverage strategic targeting solutions to reach the right audience at the right moment
+                    </p>
+                    <ul>
+                    	<li><span class="webMediaTargetingBlack"><strong>Geographic Targeting:</strong> DMA, City, State, Zip Code, Country, etc.</span></li>
+                        <li><span class="webMediaTargetingBlack"><strong>Content Targeting:</strong> destination, theme, or keyword</span></li>
+                        <li><span class="webMediaTargetingBlack"><strong>Sequential Targeting:</strong> takes users through a series of brand messages</span></li>
+                        <li><span class="webMediaTargetingBlack"><strong>Behavioral Targeting:</strong> targeting based on audience behaviors on travelandleisure.com and the web universe, e.g., searched for cruise in a search engine</span></li>
+                        
+                    </ul>
+                </article>
+                <!--/#TLWebMediaTargeting-->
+                <article id="TLWebContacts" class="TLWebHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrWebContacts">Contacts</h2>
+                    <article id="TLWebContactsLeft">
+                    <p>
+                    <span class="contactBoldBlack">NEW YORK</span><br>
+                            Travel + Leisure<br>
+                            1120 Avenue of Americas<br>
+                            New York, NY 10036<br>
+                            Tel: 212-382-5600<br>
+                            Fax: 212-768-1568<br>
+                            <br>
+                            <span class="contactGrey">VP/Publisher</span><br>
+                            Jay Meyer<br> 
+                            Tel: 212-827-6487<br>
+                            Jay.Meyer@timeinc.com<br>
+                            <br>
+                            <span class="contactGrey">Executive Digital Director</span><br>
+                            Nick Van Sicklen<br> 
+                            Tel: 646-366-8685<br>
+                            Nick.VanSicklen@timeinc.com <br>
+                            <br>
+                            <span class="contactGrey">Assistant to the Publisher</span><br>
+                            Kara Kaplan<br>
+                            Tel: 646-822-0103<br>
+                            Kara.Kaplan@timeinc.com <br>
+                            <br>
+                            <span class="contactGrey">Advertising Operations Manager</span><br>
+                            Stefanie Nathanson<br>
+                            Tel: 212-382-5640<br>
+                            Stefanie.Nathanson@timeinc.com <br>
+                            <br>
+                            <span class="contactGrey">Luxury + Fashion Director</span><br>
+                            Lily Givoni<br>
+                            Tel: 212-382-5672<br>
+                            Lily.Givoni@timeinc.com <br>
+                            <br>
+                            
+                            <span class="contactGrey">Senior Account Manager</span> <br>
+                            Brian Israel<br>
+                            Tel: 212-382-5834<br>
+                            Brian.Israel@timeinc.com <br>
+                            <br>          
+                            <span class="contactGrey"> Senior Account Manager</span><br>
+                            Angelo Lombardo<br>                   
+                            Tel: 212-382-5760<br>
+                            Angelo.Lombardo@timeinc.com <br>
+                            <br>
+                           <span class="contactGrey"> Account Manager</span><br>
+                            Whitney Williams Frahm<br> 
+                            Tel: 212-382-5614<br>
+                            Whitney.Frahm@timeinc.com <br>
+                            <br>
+                            <span class="contactGrey">Assistants</span><br>
+                            Gina Grammatica<br>
+                            Tel: 212-382-5539<br>
+                            Gina.Grammatica@timeinc.com<br>
+                            <br>
+                            Nicholas Urkonis<br>
+                            Tel: 646-366-8680<br>
+                            Nicholas.Urkonis@timeinc.com <br>
+                            
+                    <br>
+                    <br>
+                    <span class="contactBoldBlack">ATLANTA</span><br>
+                            The DiCarlo Group<br>
+                            320 Maxwell Road, Suite 400<br>
+                            Alpharetta, GA, 30004<br>
+                            Tel: 770-667-9500<br>
+                            Fax: 770-667-9700 <br>
+                            <br>
+                            <span class="contactGrey">President + CEO</span><br>
+                            Tim DiCarlo<br>
+                            Tim@dicarlogroup.com<br>
+                            <br>
+                            
+                            <span class="contactGrey">Account Manager</span><br>
+                            Meagan King <br>
+                            Meagan@dicarlogroup.com<br>
+                            <br>
+                            <span class="contactGrey">Sales Associate</span><br>
+                            Dian Wescott<br>
+                            Dian@dicarlogroup.com<br>
+                            <br>
+					</p>
+                    </article>
+                    <!--/#TLWebContactsLeft-->
+                    <article id="TLWebContactsRight">
+                    <p>
+                    <span class="contactRed">MIDWEST</span><br>
+                            <span class="contactBoldBlack">CHICAGO/DALLAS</span><br>
+                            Miller Dixon Media<br>
+                            625 North Michigan Avenue<br>
+                            Suite 250<br>
+                            Chicago, IL 60611<br>
+                            Tel: 312-440-6900<br>
+                            Fax: 312-440-4993<br>
+                            <br>
+                            <span class="contactGrey">Midwest Director</span><br>
+                            Kate Dixon<br>
+                            Tel: 312-440-6901<br>
+							Cell: 312-550-6900<br>
+                            kate@millerdixon.com <br>
+                            <br>
+                            <span class="contactGrey">Midwest Manager</span><br>
+                            Hillary Pavia <br>
+                            Tel: 312-440-6906<br>
+                            Cell: 804-366-7969<br>
+                            Hillary@millerdixon.com<br>
+                            <br>
+                            <span class="contactGrey">Midwest Manager - Digital</span><br>
+                            Shanley Irving<br>
+                            Tel: 312-440-6904<br>
+                            Shanley@millermediasales.com<br>
+                            <br>
+                            <span class="contactGrey">Midwest Manager - Digital</span><br>
+                            Kristy Lynch <br>
+                            Tel: 312-440-6908<br>
+                            Klynch@millerdixon.com<br>
+                            <br>
+                            <span class="contactGrey">Sales Associate</span><br>
+                            Libby Liesveld<br>
+                            Tel: 312-440-6905<br>
+                            libby@millerdixon.com<br>
+                            
+                    <br>
+                    <br>
+                    <span class="contactRed">FLORIDA AND THE CARIBBEAN</span><br>
+                    <span class="contactBoldBlack">MIAMI</span><br>
+                            Blue Group Media<br>
+                            7301 SW 57th Court, Suite 570<br>
+                            Miami, FL 33143<br>
+                            Tel: 305-648-3338<br>
+                            Fax: 305-648-3349 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            <span class="contactGrey">Regional Director</span><br>
+                            Jill Stone <br>
+                            jstone@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Senior Account Manager</span><br>
+                            Eric Davis<br>
+                            edavis@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Rachel Sanders<br>
+                            rsanders@bluegroumedia.com <br>
+                            <br>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Megan Filanowski <br>
+                            mfilanowski@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Sales Coordinator</span><br>
+                            Susan Baxter<br>
+                            sbaxter@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Sales Coordinator</span><br>
+                            Joann Villanueva<br>
+                            jvillanueva@bluegroupmedia.com <br>
+                            
+                    <br>
+                    <br>
+                    <span class="contactRed">WEST COAST</span><br>
+                    <span class="contactBoldBlack">LOS ANGELES</span><br>
+                            Travel + Leisure<br>
+                            11766 Wilshire Blvd.<br>
+                            17th Floor<br>
+                            Los Angeles, CA 90025<br>
+                            Tel: 310-268-7200<br>
+                            Fax: 310-268-7604 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            <span class="contactGrey">Director of Emerging Markets</span><br>
+                            Kristin Nicholas<br>
+                            Tel: 310-268-7421 <br>
+                            Kristin.Nicholas@timeinc.com <br>
+                            <br>
+                            <span class="contactGrey">Southwest Director </span><br>
+                            Jim Iacono<br>
+                            Tel: 310-268-7242<br>
+                            Cell: 310-850-7497<br>
+                            James.Iacono@timeinc.com <br>
+                            <br>
+                            <span class="contactGrey">Assistant</span><br>
+                            Kimberly De Francesco <br>
+                            Tel: 310-268-7492<br>
+                            Kimberly.DeFrancesco@timeinc.com <br>
+                            <br>
+                            <span class="contactBoldBlack">SAN FRANCISCO</span><br>
+                            SD Media<br>
+                            21 Tamal Vista Boulevard<br>
+                            Suite 207<br>
+                            Corte Madera, CA 94925<br>
+                            Tel: 415-496-2700<br>
+                            <br>
+                            <span class="contactGrey">Northwest Director</span><br>
+                            Steve Dveris<br>
+                            sdveris@sdmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Northwest Manager</span><br>
+                            Kelly Wagner<br>
+                            Cell: 415-225-6787
+                            kwagner@sdmedia.com
+                    </p>
+                    </article>
+                    <!--/#TLWebContactsRight-->
+                </article>
+                <!--/#TLWebContacts-->
+               
+                
+            </article>
+            <!--/#TLRightContainer -->
+            <article class="clear">
+            </article>
+        	<!--/.clear-->
+        </section>
+       <footer>
+        <p>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+        </p>
+        </footer>
+    </section>
+	<!--/TLMainWrapper -->
+
+<!-- Begin AmexPub Google Analytics code --> 
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3516775-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- End AmexPub Google Analytics code -->
+
+</body>
+</html>

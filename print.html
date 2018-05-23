@@ -1,0 +1,1315 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Travel + Leisure Mediakit</title>
+<link rel="stylesheet" href="css/global.css?4444" />
+
+<!--[if IE 7]>
+<style type="text/css">
+
+    #hdrAudienceMRI {
+    	margin:25px 0 0 -240px !important;
+        height:50px;
+    }
+
+    #hdrAudienceMRR {
+    	margin:25px 0 0 -95px !important;
+        height:50px;
+    }
+
+    #hdrAudienceIPSOS {
+    	margin:25px 0 0 -95px !important;
+        height:50px;
+    }
+
+    #hdrPrintRates {
+    	margin:25px 0 0 -347px !important;
+        height:50px;
+    }
+
+    #hdrPrintProduction {
+    	margin:25px 0 0 -240px !important;
+        height:50px;
+    }
+
+    #hdrPrintContacts {
+    	margin:25px 0 0 -347px !important;
+        height:70px;
+    }
+    #hdrPrintPublication {
+    	margin:25px 0 0 -20px !important;
+        height:50px;
+    }
+
+    #hdrPrintInternationalEditions {
+    	margin:25px 0 0 -10px !important;
+        height:50px;
+    }
+.chartHeader , .chartHeaderLeadership ,.chartHeaderAudience , .chartHeaderCoverage ,.chartHeaderComp {
+	margin-top:0px !important;
+    position:relative;
+}
+
+	.chartHeaderLeadership {
+    	margin-right:70px;
+        width:180px !important;
+    }
+	#TLMissionStatementContent p {
+    	margin-left:30px !important;
+    }
+
+
+	.chartHeaderCoverage {
+    	margin-right:4px !important;
+    }
+
+    .chartHeaderAudience {
+    	margin-right:4px !important;
+    }
+
+	.chartBoldBlack {
+    	line-height:17px !important;
+    }
+
+    .chartRed {
+    	width:195px !important;
+    }
+
+	#TLPrintProductionSpecs UL {
+    	margin-left:15px !important;
+    }
+	#PrintRatesRateBaseBox {
+    	left:220px !important;
+    }
+</style>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/jquery.ba-bbq.min.js"></script>
+<script>
+	$(document).ready(function(e){
+		var ua = $.browser;
+		if (ua.mozilla && parseFloat(ua.version.slice(0,3)) < 3.6) {
+			$('.chartHeaderCoverage').attr('style', 'margin-right:10px !important');
+			$('.chartHeaderAudience').attr('style', 'margin-right:10px !important');
+		}
+
+			if(window.location.hash) {
+			var hash = location.hash.replace("#","");
+			var activeSection = 'TL'+hash
+			$('.TLPrintActiveContent').removeClass('TLPrintActiveContent').addClass('TLPrintHiddenContent');
+			//alert(hash)
+			$('#' + hash).addClass('activeTLPrintNavButtons');
+			$('#' + activeSection).addClass('TLPrintActiveContent');
+			$('html,body').animate({scrollTop: 0}, 100);
+		};
+
+		$('#PrintSecondaryNav a').click(function(e){
+			var $div = $($(this).attr('href'));
+			var $firstURL = window.location.pathname;
+			var $newURL = $(this).attr('href').replace('TL','');
+			$('.TLPrintActiveContent').removeClass('TLPrintActiveContent').addClass('TLPrintHiddenContent');
+			$div.addClass('TLPrintActiveContent');
+			$('.activeTLPrintNavButtons').removeClass('activeTLPrintNavButtons');
+			$(this).addClass('activeTLPrintNavButtons');
+			//$('html,body').animate({scrollTop: 0}, 100);
+			//location.href = $firstURL+$newURL;
+			//window.history.pushState( {} , 'bar', '$firstURL+$newURL' );
+			if ( $.browser.msie ) {
+				$('html,body').animate({scrollTop: 0}, 100);
+				location.href = $firstURL+$newURL;
+				}
+			else {
+				history.replaceState(null, '', $firstURL+$newURL);
+				}
+
+			return false;
+			});
+
+		$('#TLPrintHeader').click(function() {
+			var $div = $($(this).attr('href'));
+			$('.TLPrintActiveContent').removeClass('TLPrintActiveContent').addClass('TLPrintHiddenContent');
+			$div.addClass('TLPrintActiveContent');
+			$('.activeTLPrintNavButtons').removeClass('activeTLPrintNavButtons');
+			//return false;
+		});
+
+		$('#TLInternalPrintLinkActive').click(function() {
+			return false;
+		});
+
+	});
+</script>
+</head>
+<body>
+	<section id="TLMainWrapper">
+    	<header>
+        	<section id="TLLogo">
+            	<a id="TLHomeButton" href="index.html">Travel and Leisure Home</a>
+            </section>
+            <!-- /#T+LLogo -->
+            <section id="TLMediaKit">
+            	<a id="TLMediaKitButton" href="index.html">Travel and Leisure Media Kit</a>
+            </section>
+            <!--/#T+LMediaKit -->
+        </header>
+        <section id="TLPrintContainer">
+        	<article id="TLLeftContainer">
+            	<article id="TLLeftContainerPrint">
+                    <a id="TLPrintHeader" href="#TLPrintLanding">Print</a>
+                    <ul id="PrintSecondaryNav">
+                        <li><a href="http://travelandleisure.com/microsites/tlmediakit/pdf/mri.pdf" target="_blank" class="TLPrintNavButtons" id="PrintAudienceMRI">Audience MRI</a></li>
+                        <li><a href="http://travelandleisure.com/microsites/tlmediakit/pdf/ipsos.pdf" target="_blank" class="TLPrintNavButtons" id="PrintAudienceIPSOS">Audience Ipsos</a></li>
+                        <li><a href="http://travelandleisure.com/microsites/tlmediakit/pdf/circulation.pdf" target="_blank" class="TLPrintNavButtons" id="PrintCirculation">Circulation</a></li>
+                        <li><a href="http://travelandleisure.com/microsites/tlmediakit/pdf/rates.pdf" target="_blank" class="TLPrintNavButtons" id="PrintRates">Rates</a></li>
+                        <li><a href="http://www.travelandleisure.com/microsites/tlmediakit/pdf/closing.pdf" target="_blank" class="TLPrintNavButtons" id="PrintPublication-ClosingDates">Edit Lineup/Closing Dates</a></li>
+                        <li><a href="http://travelandleisure.com/microsites/tlmediakit/pdf/specs.pdf" target="_blank" class="TLPrintNavButtons" id="PrintProductionSpecs">Production Specs</a></li>
+                        <li><a href="#TLPrintContacts" class="TLPrintNavButtons" id="PrintContacts">Contacts</a></li>
+                        <li><a href="#TLPrintInternationalEditions" class="TLPrintNavButtons" id="PrintInternationalEditions">International Editions</a></li>
+                    </ul>
+                    <ul id="TLInternalNav">
+                    	<li><a id="TLInternalPrintLinkActive" href="#TLPrintLanding">Print</a></li>
+                        <li><a id="TLInternalWebLink" href="web.html">Web</a></li>
+                        <li><a id="TLInternalTabletLink" href="tablet.html">Tablet</a></li>
+                    </ul>
+                </article>
+                <!--/#TLLeftContainerPrint -->
+            </article>
+            <!--/#TLLeftContainer -->
+            <article id="TLRightContainer">
+            	<article id="TLPrintLanding" class="TLPrintActiveContent">
+
+                </article>
+                <!--/#TLPrintLanding-->
+                <article id="TLPrintAudienceMRI" class="TLPrintHiddenContent">
+                	<h2 id="hdrAudienceMRI">T+L MRI Reader Profile</h2>
+                    <table width="595" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartHeaderLeadership">Readership</p></th>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartHeaderAudience">Audience (000)</p></th>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartHeaderCoverage">Coverage (%)</p></th>
+                        <th scope="col" class="chartHeader chartLastColumn"><p class="chartHeaderComp">Comp (%)</p></th>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Adults</td>
+                        <td class="chartBlack">6,651</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">100</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Men</td>
+                        <td class="chartBlack">2,797</td>
+                        <td class="chartBlack">2</td>
+                        <td class="chartBlack chartLastColumn">42</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Women</td>
+                        <td class="chartBlack">3,854</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">58</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Age</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey chartLastColumn">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">25-49</td>
+                        <td class="chartBlack">2,999</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">45</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">25-54</td>
+                        <td class="chartBlack">3,684</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">55</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">25-39</td>
+                        <td class="chartBlack">1,629</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">25</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">30-44</td>
+                        <td class="chartBlack">1,740</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">26</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">35-54</td>
+                        <td class="chartBlack">2,653</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">40</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">45-54</td>
+                        <td class="chartBlack">1,446</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">22</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartLastRow">55+</td>
+                        <td class="chartBlack chartLastRow">2,747</td>
+                        <td class="chartBlack chartLastRow">3</td>
+                        <td class="chartBlack chartLastRow chartLastColumn">41</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBoldBlack"><h3>Median Age: 50</h3></td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Marital Status</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Married</td>
+                        <td class="chartBlack">4,123</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">62</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Education</td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Att-Grad College +</td>
+                        <td class="chartBlack">5,439</td>
+                        <td class="chartBlack">4</td>
+                        <td class="chartBlack chartLastColumn">82</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Graduated College +</td>
+                        <td class="chartBlack">3,411</td>
+                        <td class="chartBlack">5</td>
+                        <td class="chartBlack chartLastColumn">51</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Occupation</td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey chartLastColumn"></td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Prof/Managerial</td>
+                        <td class="chartBlack">2,335</td>
+                        <td class="chartBlack">5</td>
+                        <td class="chartBlack chartLastColumn">35.1</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Top/Middle Management</td>
+                        <td class="chartBlack">1,666</td>
+                        <td class="chartBlack">4</td>
+                        <td class="chartBlack chartLastColumn">25</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Household Income</td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey chartLastColumn"></td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$60,000+</td>
+                        <td class="chartBlack">4,829</td>
+                        <td class="chartBlack">4</td>
+                        <td class="chartBlack chartLastColumn">73</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$75,000+</td>
+                        <td class="chartBlack">4,333</td>
+                        <td class="chartBlack">5</td>
+                        <td class="chartBlack chartLastColumn">65</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$100,000+</td>
+                        <td class="chartBlack">3,316</td>
+                        <td class="chartBlack">5</td>
+                        <td class="chartBlack chartLastColumn">50</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$150,000+</td>
+                        <td class="chartBlack">1,661</td>
+                        <td class="chartBlack">6</td>
+                        <td class="chartBlack chartLastColumn">25</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBoldBlack"><h3>Median HHI: $111K</h3></td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td>&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Home Ownership</td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Own Home</td>
+                        <td class="chartBlack">4,806</td>
+                        <td class="chartBlack">3</td>
+                        <td class="chartBlack chartLastColumn">72</td>
+                      </tr>
+
+                    </table>
+                    <table width="595" border="0" cellspacing="0" cellpadding="0">
+                    	<tr>
+                        	<td class="chartBoldBlack"><h3>Median Home value: $350K</h3></td>
+                      </tr>
+                        <tr>
+                        	<td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                        	<td style="font-family:arial;font-size:12px;text-align:left;"><br>
+                        Source: 2014 FALL MRI</td>
+                      	</tr>
+                  </table>
+
+
+                </article>
+                <!--/#TLPrintAudienceMRI-->
+                <article id="TLPrintAudienceIPSOS" class="TLPrintHiddenContent">
+                	<h2 id="hdrAudienceIPSOS">Ipsos Affluent Survey Reader Profile</h2>
+                    <table width="595" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartHeaderLeadership">Leadership</p></th>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartHeaderAudience">Audience (000)</p></th>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartHeaderCoverage">Coverage (%)</p></th>
+                        <th scope="col" class="chartHeader chartLastColumn"><p class="chartHeaderComp">Comp (%)</p></th>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Adults</td>
+                        <td class="chartBlack">2,653</td>
+                        <td class="chartBlack">3.0</td>
+                        <td class="chartBlack chartLastColumn">100</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Men</td>
+                        <td class="chartBlack">1,300</td>
+                        <td class="chartBlack">3.8</td>
+                        <td class="chartBlack chartLastColumn">49</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Women</td>
+                        <td class="chartBlack">1,353</td>
+                        <td class="chartBlack">4.1</td>
+                        <td class="chartBlack chartLastColumn">51</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Age</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey chartLastColumn">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">25-49</td>
+                        <td class="chartBlack">1,024</td>
+                        <td class="chartBlack">3.3</td>
+                        <td class="chartBlack chartLastColumn">39</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">25-54</td>
+                        <td class="chartBlack">1,358</td>
+                        <td class="chartBlack">3.4</td>
+                        <td class="chartBlack chartLastColumn">51</td>
+                      </tr>
+                      <tr>
+
+                        <td class="chartRed">25-34</td>
+                        <td class="chartBlack">301</td>
+                        <td class="chartBlack">2.8</td>
+                        <td class="chartBlack chartLastColumn">11</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">35-44</td>
+                        <td class="chartBlack">399</td>
+                        <td class="chartBlack">3.0</td>
+                        <td class="chartBlack chartLastColumn">15</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">35-54</td>
+                        <td class="chartBlack">1,057</td>
+                        <td class="chartBlack">3.7</td>
+                        <td class="chartBlack chartLastColumn">40</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">45-54</td>
+                        <td class="chartBlack">620</td>
+                        <td class="chartBlack">4.1</td>
+                        <td class="chartBlack chartLastColumn">26</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartLastRow">55+</td>
+                        <td class="chartBlack chartLastRow">1,220</td>
+                        <td class="chartBlack chartLastRow">6.0</td>
+                        <td class="chartBlack chartLastRow chartLastColumn">46</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBoldBlack"><h3>Median Age: 53 years</h3></td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Maritial Status</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Married</td>
+                        <td class="chartBlack">2,042</td>
+                        <td class="chartBlack">4.3</td>
+                        <td class="chartBlack chartLastColumn">77</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Education</td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Att-Grad College+</td>
+                        <td class="chartBlack">2,507</td>
+                        <td class="chartBlack">4.1</td>
+                        <td class="chartBlack chartLastColumn">95</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Graduated College+</td>
+                        <td class="chartBlack">1,940</td>
+                        <td class="chartBlack">4.2</td>
+                        <td class="chartBlack chartLastColumn">73</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Occupation</td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Prof/Managerial</td>
+                        <td class="chartBlack">1,665</td>
+                        <td class="chartBlack">4.0</td>
+                        <td class="chartBlack chartLastColumn">63</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">Top Executives</td>
+                        <td class="chartBlack">616</td>
+                        <td class="chartBlack">5.9</td>
+                        <td class="chartBlack chartLastColumn">23</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Household Income</td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                        <td class="chartGrey"></td>
+                      </tr>
+                      <tr>
+                      <tr>
+                        <td class="chartRed">$150,000+</td>
+                        <td class="chartBlack">1,432</td>
+                        <td class="chartBlack">4.6</td>
+                        <td class="chartBlack chartLastColumn">53</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$200,000+</td>
+                        <td class="chartBlack">872</td>
+                        <td class="chartBlack">5.6</td>
+                        <td class="chartBlack chartLastColumn">33</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartLastRow">$300,000+</td>
+                        <td class="chartBlack chartLastRow">446</td>
+                        <td class="chartBlack chartLastRow">8.1</td>
+                        <td class="chartBlack chartLastRow chartLastColumn">17</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBoldBlack"><h3>Median HHI: $158K</h3></td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Net Worth</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                      </tr>
+                      <td class="chartRed chartLastRow">$1 Million+</td>
+                        <td class="chartBlack chartLastRow">1,103</td>
+                        <td class="chartBlack chartLastRow">5.6</td>
+                        <td class="chartBlack chartLastRow chartLastColumn">42</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBoldBlack"><h3>Median HH Net Worth:<br>$790K</h3></td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Home Value</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$250,000+</td>
+                        <td class="chartBlack">1,863</td>
+                        <td class="chartBlack">4.5</td>
+                        <td class="chartBlack chartLastColumn">70</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$500,000+</td>
+                        <td class="chartBlack">831</td>
+                        <td class="chartBlack">5.7</td>
+                        <td class="chartBlack chartLastColumn">31</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$750,000+</td>
+                        <td class="chartBlack">418</td>
+                        <td class="chartBlack">7.1</td>
+                        <td class="chartBlack chartLastColumn">16</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">$1,000,000+</td>
+                        <td class="chartBlack">190</td>
+                        <td class="chartBlack">7.3</td>
+                        <td class="chartBlack chartLastColumn">7</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBoldBlack"><h3>Median Home Value:<br>$380K</h3></td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack">&nbsp;</td>
+                        <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                      </tr>
+                      <tr>
+                        <td class="chartGrey">Travel</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                        <td class="chartGrey">&nbsp;</td>
+                      </tr>
+                       <tr>
+                        <td class="chartRed">Currently Own Valid<br>Passport</td>
+                        <td class="chartBlack">2,311</td>
+                        <td class="chartBlack">4.9</td>
+                        <td class="chartBlack chartLastColumn">87</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">5+ Foreign Round-<br>Trips Past Year</td>
+                        <td class="chartBlack">168</td>
+                        <td class="chartBlack">10.1</td>
+                        <td class="chartBlack chartLastColumn">65</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">5+ Domestic Round-<br>Trips Past Year</td>
+                        <td class="chartBlack">1,037</td>
+                        <td class="chartBlack">5.2</td>
+                        <td class="chartBlack chartLastColumn">39</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartLastRow">11+ Any Round-Trips<br>Past Year</td>
+                        <td class="chartBlack chartLastRow">626</td>
+                        <td class="chartBlack chartLastRow">6.4</td>
+                        <td class="chartBlack chartLastRow chartLastColumn">24</td>
+                      </tr>
+
+                    </table>
+                    <table width="595" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td style="font-family:arial;font-size:12px;text-align:left;"><br><br>*Includes: President/Chairman/V.P./CEO/CFO/COO/Other Officer/Board Member/General Manager/Director/Owner-Partner<br>
+Source: Ipsos Affluent Survey USA 2014 (HHI $100,000+)</td>
+                      </tr>
+                    </table>
+                </article>
+                <!--/#TLPrintAudienceIPSOS-->
+                <article id="TLPrintCirculation" class="TLPrintHiddenContent">
+                	TLPrintCirculation
+                </article>
+                <!--/#TLPrintCirculation-->
+                <article id="TLPrintRates" class="TLPrintHiddenContent">
+                	<h2 id="hdrPrintRates">National Rates</h2>
+                    <article id="PrintRatesRateBaseBox">
+                    </article>
+                    <!--/#PrintRatesRateBaseBox-->
+                    <table width="595" border="0" cellspacing="0" cellpadding="0" id="TLPrintRatesChart">
+                        <tr>
+                          <th scope="col" class="chartRatesGrey">&nbsp;</th>
+                          <th scope="col" class="chartRatesGrey"><span class="chartHeader1x">1x</span></th>
+                          <th scope="col" class="chartRatesGrey"><span class="chartHeader6x">6x</span></th>
+                          <th scope="col" class="chartRatesGrey"><span class="chartHeader12x">12x</span></th>
+                        </tr>
+                        <tr>
+                          <td class="chartBoldBlack"><h3>Covers</h3></td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">Cover 2</td>
+                          <td class="chartBlack centerBlack">$170,300</td>
+                          <td class="chartBlack centerBlack">$165,191</td>
+                          <td class="chartBlack chartLastColumn">$160,082</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">Cover 3</td>
+                          <td class="chartBlack centerBlack">$162,900</td>
+                          <td class="chartBlack centerBlack">$158,013</td>
+                          <td class="chartBlack chartLastColumn chartLastColumn">$153,126</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed chartLastRow">Cover 4</td>
+                          <td class="chartBlack chartLastRow centerBlack">$185,100</td>
+                          <td class="chartBlack chartLastRow centerBlack">$179,547</td>
+                          <td class="chartBlack chartLastRow  chartLastColumn">$173,994</td>
+                        </tr>
+                        <tr>
+                          <td class="chartBoldBlack"><h3>Four Color</h3></td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">4C Page</td>
+                          <td class="chartBlack centerBlack">$148,100</td>
+                          <td class="chartBlack centerBlack">$143,657</td>
+                          <td class="chartBlack chartLastColumn">$139,214</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">4C 2/3 Page</td>
+                          <td class="chartBlack centerBlack">$118,100</td>
+                          <td class="chartBlack centerBlack">$114,557</td>
+                          <td class="chartBlack chartLastColumn">$111,014</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">4C 1/2 Page</td>
+                          <td class="chartBlack centerBlack">$88,900</td>
+                          <td class="chartBlack centerBlack">$86,233</td>
+                          <td class="chartBlack chartLastColumn">$83,566</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">4C 1/3 Page</td>
+                          <td class="chartBlack centerBlack">$59,100</td>
+                          <td class="chartBlack centerBlack">$57,327</td>
+                          <td class="chartBlack chartLastColumn">$55,554</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed chartLastRow">4C 1/6 Page</td>
+                          <td class="chartBlack chartLastRow centerBlack">$24,500</td>
+                          <td class="chartBlack chartLastRow centerBlack">$23,765</td>
+                          <td class="chartBlack chartLastColumn chartLastRow">$23,030</td>
+                        </tr>
+                        <tr>
+                          <td class="chartBoldBlack"><h3>Two Color</h3></td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">2C Page</td>
+                          <td class="chartBlack centerBlack">$124,500</td>
+                          <td class="chartBlack centerBlack">$120,765</td>
+                          <td class="chartBlack chartLastColumn">$117,030</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">2C 2/3 Page</td>
+                          <td class="chartBlack centerBlack">$99,300</td>
+                          <td class="chartBlack centerBlack">$96,321</td>
+                          <td class="chartBlack chartLastColumn">$93,342</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">2C 1/2 Page</td>
+                          <td class="chartBlack centerBlack">$74,700</td>
+                          <td class="chartBlack centerBlack">$72,459</td>
+                          <td class="chartBlack chartLastColumn">$70,218</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">2C 1/3 Page</td>
+                          <td class="chartBlack centerBlack">$49,700</td>
+                          <td class="chartBlack centerBlack">$48,209</td>
+                          <td class="chartBlack chartLastColumn">$46,718</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed chartLastRow">2C 1/6 Page</td>
+                          <td class="chartBlack chartLastRow centerBlack">$20,600</td>
+                          <td class="chartBlack chartLastRow centerBlack">$19,982</td>
+                          <td class="chartBlack chartLastRow chartLastColumn">$19,364</td>
+                        </tr>
+                        <tr>
+                          <td class="chartBoldBlack"><h3>Black + White</h3></td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack">&nbsp;</td>
+                          <td class="chartBoldBlack chartLastColumn">&nbsp;</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">BW Page</td>
+                          <td class="chartBlack centerBlack">$100,700</td>
+                          <td class="chartBlack centerBlack">$97,679</td>
+                          <td class="chartBlack chartLastColumn">$94,658</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">BW 2/3 Page</td>
+                          <td class="chartBlack centerBlack">$80,300</td>
+                          <td class="chartBlack centerBlack">$77,891</td>
+                          <td class="chartBlack chartLastColumn">$75,482</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">BW 1/2 Page</td>
+                          <td class="chartBlack centerBlack">$60,400</td>
+                          <td class="chartBlack centerBlack">$58,588</td>
+                          <td class="chartBlack chartLastColumn">$56,776</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed">BW 1/3 Page</td>
+                          <td class="chartBlack centerBlack">$40,200</td>
+                          <td class="chartBlack centerBlack">$38,994</td>
+                          <td class="chartBlack chartLastColumn">$37,788</td>
+                        </tr>
+                        <tr>
+                          <td class="chartRed chartLastRow">BW 1/6 Page</td>
+                          <td class="chartBlack chartLastRow centerBlack">$16,700</td>
+                          <td class="chartBlack chartLastRow centerBlack">$16,199</td>
+                          <td class="chartBlack chartLastColumn chartLastRow">$15,698</td>
+                        </tr>
+
+                      </table>
+					  <table width="595" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td style="font-family:arial;font-size:12px;text-align:left;">PLEASE NOTE: Circulation includes the print and digital editions of the Magazine. Qualified full-run advertisements will run in both editions.<br>
+						  See MAGAZINE ADVERTISING TERMS AND CONDITIONS for additional information including opt-out and upgrade options.<br><br>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="font-family:arial;font-size:12px;text-align:left;"><a href="termsofuse.html" target="_blank">Advertiser Terms and Conditions</a></td>
+                        </tr>
+                      </table>
+
+                    <!-- <article style="font-family:arial;font-size:12px;text-align:left;"><a href="termsofuse.html" target="_blank">View Advertiser Terms and Conditions</a></article> -->
+                </article>
+                <!--/#TLPrintRates-->
+                <article id="TLPrintPublication-ClosingDates" class="TLPrintHiddenContent">
+                	<h2 id="hdrPrintPublication">Publication - Closing Dates</h2>
+                    <table width="595" border="0" cellspacing="0" cellpadding="0" id="TLPrintPublicationDatesChart">
+                      <tr>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><h3 class="chartIssue">Issue</h3></th>
+                        <!-- <th scope="col" class="chartHeader chartPaddingLeft"><h3 class="chartThemes-nocolor"><span style="color:#1f497d;">Editorial Themes +</span><br> <span style="color:#ff0041;">Special Sections</span></h3></th> -->
+                        <th scope="col" class="chartHeader chartPaddingLeft"><h3 class="chartOrder">Order /<br>Material Closing</h3></th>
+                        <th scope="col" class="chartHeader chartPaddingLeft chartLastRow chartLastColumn"><h3 class="chartSaleDate">On-Sale<br>Date</h3></th>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue chartBorderTop">January</td>
+                        <!--<td class="chartBlack chartBorderTop">
+                        	<span style="color:#1f497d;">T+L 500 Ultimate Hotel Guide</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Girlfriend Getaways</li>
+                                <li>Business Traveler Series</li>
+                            </ul>
+
+                        </td> -->
+                        <td class="chartBlack chartBorderTop">10/27</td>
+                        <td class="chartBlack chartLastColumn chartBorderTop">12/19</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">February</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">Island Escapes</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Romantic Travel Guide</li>
+                                <li>Explore the West Series</li>
+                                <li>Explore Mexico Series</li>
+                            </ul>
+                        </td> -->
+                        <td class="chartBlack">11/24</td>
+                        <td class="chartBlack chartLastColumn">1/16</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">March</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;line-height:12px;">Design Awards<br>
+                            T+L Family</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Journey to Hawaii Series</li>
+                                <li>Visit Florida</li>
+                            </ul>
+                        </td> -->
+                        <td class="chartBlack">12/22</td>
+                        <td class="chartBlack chartLastColumn">2/13</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">April</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">Special Food Issue</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Oahu Co-op Series</li>
+                                <li>Explore Mexico Series</li>
+                                <li>Explore the West Series</li>
+                                <li>Southern Sojourns Series</li>
+                            </ul>
+                        </td> -->
+                        <td class="chartBlack">1/27</td>
+                        <td class="chartBlack chartLastColumn">3/20</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">May</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">Trekking, Hiking + Walking Tours</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Journey to Hawaii Series</li>
+                                <li>Caribbean Escape Series</li>
+                                <li>Family Getaways Series</li>
+                                <li>New England Series</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 2.7.13</span>
+                        </td> -->
+                        <td class="chartBlack">2/25</td>
+                        <td class="chartBlack chartLastColumn">4/17</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">June</td>
+                        <!--<td class="chartBlack">
+                        	<span style="color:#1f497d;">Hotels Issue</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Hong Kong + China Series</li>
+                                <li>Miami Hotels</li>
+                                <li>Explore Mexico Series</li>
+                                <li>Explore the West Series</li>
+                                <li>Vegas Spotlight</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 3.2.13</span>
+                        </td> -->
+                        <td class="chartBlack">3/25</td>
+                        <td class="chartBlack chartLastColumn">5/15</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">July</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">Social Media in Travel + Tourism (SMITTY&#8480;) Awards</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Journey to Hawaii Series</li>
+                                <li>Entertaining at Home/Wine + Spirits</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 4.9.13</span>
+                        </td> -->
+                        <td class="chartBlack">4/29</td>
+                        <td class="chartBlack chartLastColumn">6/19</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">August</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">World's Best Awards</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Oahu Co-op Series</li>
+                                <li>Iconic Hotels Asia + India</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 5.4.13</span>
+                        </td> -->
+                        <td class="chartBlack">5/26</td>
+                        <td class="chartBlack chartLastColumn">7/17</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">September</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">Style + Culture</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Journey to Hawaii Series</li>
+                            	<li>Explore Mexico Series</li>
+                                <li>Explore the West Series</li>
+                                <li>Multigereational Travel</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 6.8.13</span>
+                        </td> -->
+                        <td class="chartBlack">6/29</td>
+                        <td class="chartBlack chartLastColumn">8/21</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">October</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">Global Vision Awards</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Hong Kong + China Series</li>
+                                <li>Spa Collection Series</li>
+                                <li>Hotel Insider</li>
+                                <li>Holiday Getaway Guide</li>
+                                <li>New England Series</li>
+                                <li>Southern Sojourns Series</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 7.6.13</span>
+                        </td> -->
+                        <td class="chartBlack">7/29</td>
+                        <td class="chartBlack chartLastColumn">9/18</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue">November</td>
+                        <!-- <td class="chartBlack">
+                        	<span style="color:#1f497d;">Europe for the Holidays</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Caribbean Escape Series</li>
+                                <li>Business Travellers Series</li>
+                                <li>Vegas Spotlight</li>
+                                <li>Hot Hotels</li>
+                                <li>Family Getaway Series</li>
+                                <li>Explore Mexico Series</li>
+                                <li>Explore the West Series</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 8.3.13</span>
+                        </td> -->
+                        <td class="chartBlack">8/24</td>
+                        <td class="chartBlack chartLastColumn">10/16</td>
+                      </tr>
+                      <tr>
+                        <td class="chartBlue chartLastRow">December</td>
+                        <!-- <td class="chartBlack chartLastRow">
+                        	<span style="color:#1f497d;">Gift Guide</span>
+                            <ul style="color:#ff0041;">
+                            	<li>Gift Guide</li>
+                                <li>Shop the Globe</li>
+                                <li>Travel Trends 2014</li>
+                            </ul>
+                            <span style="color:#ff0041;">Sections Commitment Date: 9.3.13</span>
+                        </td> -->
+                        <td class="chartBlack chartLastRow">9/30</td>
+                        <td class="chartBlack chartLastColumn chartLastRow">11/20</td>
+                      </tr>
+                    </table>
+                    <table width="595" border="0" cellspacing="0" cellpadding="0">
+                    	<tr>
+                        <td style="font-family:arial;font-size:12px;text-align:left;font-weight:bold;">
+                        <br><br>
+                        To download Travel + Leisure's 2015 Editorial Calendar, please <a href="pdf/edit-calendar.pdf" target="_blank">click here</a>.
+                        <br><br><strong>SOURCE:</strong> MRI SPRING 2014
+                        <br><br><strong>NOTE:</strong> AD CLOSE + MATERIAL CLOSE ARE THE SAME DATE. iPad launches are one week prior to on sale dates. Edit subject to change, close/on sale dates subject to change.
+                        </td>
+                      </tr>
+                    </table>
+
+                </article>
+                <!--/#TLPrintPublication-ClosingDates-->
+                <article id="TLPrintProductionSpecs" class="TLPrintHiddenContent">
+                	<h2 id="hdrPrintProduction">2013 Ad Specifications</h2>
+                    <article id="TLPrint2013AdSpecsContainer">
+                    	<article id="TLPrint2013AdSpecsLeft">
+                        <h3 class="hdrTLPrintAdSpecs">BLEED</h3>
+                        <p>No charge.</p>
+                       	<h3 class="hdrTLPrintAdSpecs">POSITIONS</h3>
+                        <p>No positions guaranteed.</p>
+                        <h3 class="hdrTLPrintAdSpecs">RATES AVAILABLE ON REQUEST FOR</h3>
+                        <ul>
+                            <li><span class="printSpecBlack">Business Reply Cards</span></li>
+                            <li><span class="printSpecBlack">Inserts</span></li>
+                            <li><span class="printSpecBlack">Gatefolds</span></li>
+                            <li><span class="printSpecBlack">Cut-Outs</span></li>
+                            <li><span class="printSpecBlack">Pop-Ups</span></li>
+                            <li><span class="printSpecBlack">Scent Strips</span></li>
+                            <li><span class="printSpecBlack">A/B Copy Splits</span></li>
+                            <li><span class="printSpecBlack">Special Matched Fifth Colors</span></li>
+                        </ul>
+                        <h3 class="hdrTLPrintAdSpecs">SPECIAL ADVERTISING SUPPLEMENTS</h3>
+                        <p>Contact your sales representative for information about schedules, rates and closing dates.</p>
+
+                        <h3 class="hdrTLPrintAdSpecs">FILE TRANSMISSION</h3>
+                        <p>Please send all PDF/X-1A ads to Travel + Leisure by uploading your files to our ad portal:
+                        <a href="https://direct2time.sendmyad.com">https://direct2time.sendmyad.com</a></p>
+                        <h3 class="hdrTLPrintAdSpecs">PRODUCTION</h3>
+                        <p>Hassan Bhuiyan, AD Specialist<br>
+                        TRAVEL + LEISURE<br>
+						1271 Avenue of the Americas<br>
+						New York, NY 10020<br>
+                        Tel: 212-522-5274<br>
+						<a href="mailto:Hassan.Bhuiyan@timeinc.com" target="_blank">Hassan.Bhuiyan@timeinc.com</a></p>
+                        <p>James Flynn, Production Manager<br>
+                        Tel: 212-522-1560<br>
+						<a href="mailto:James.flynn@timeinc.com" target="_blank">James.flynn@timeinc.com</a></p>
+                        <h3 class="hdrTLPrintAdSpecs">CONTRACTS, ORDERS TO:</h3>
+                        <p>Advertising Operations Manager<br>
+                        Stefanie Nathanson<br>
+                        212-522-0845<br>
+                        <a href="mailto:Stefanie.nathanson@travelandleisure.com" target="_blank">Stefanie.nathanson@travelandleisure.com</a>
+                        </p>
+                        </article>
+                        <!--/#TLPrint2013AdSpecsLeft-->
+                        <article id="TLPrint2013AdSpecsRight">
+                        <h3 class="hdrTLPrintAdSpecs">BLEED STANDARD UNITS</h3>
+                        <table width="290" border="0" cellspacing="0" cellpadding="0" class="TLPrintAdSpecChart">
+                          <tr>
+                            <th scope="col"  class="chartAdSpecsHeader chartPaddingLeft">&nbsp;</th>
+                            <th scope="col"><h3 class="chartInches">INCHES</h3></th>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack chartBorderTop">SPREAD</td>
+                            <td class="chartRegBlack chartLastColumn chartBorderTop">16  ½ X 10 3/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">FULL  PAGE 8 ¼ X 10 3/4</td>
+                            <td class="chartRegBlack chartLastColumn">8 ¼  X 10 3/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">2/3  PAGE</td>
+                            <td class="chartRegBlack chartLastColumn">5 ¼  X 10 3/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">½  PAGE (DIGEST)</td>
+                            <td class="chartRegBlack chartLastColumn">5 ¼  X 8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">½  PAGE (HORIZONTAL)</td>
+                            <td class="chartRegBlack chartLastColumn">8 ¼  X 5 3/8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">½  PAGE (VERTICAL)</td>
+                            <td class="chartRegBlack chartLastColumn">4 1/8  X 10 3/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">1/3  PAGE (VERTICAL)</td>
+                            <td class="chartRegBlack chartLastColumn">3 X  10 3/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">1/3  PAGE (SQUARE)</td>
+                            <td class="chartRegBlack chartLastColumn">5 ¼  X 5 3/8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack chartLastRow">COVERS</td>
+                            <td class="chartRegBlack chartLastColumn chartLastRow">8 ¼  X 10 3/4</td>
+                          </tr>
+                        </table>
+						<!--/table Bleed Standard Units -->
+                        <h3 class="hdrTLPrintAdSpecs">NON-BLEED STANDARD UNITS</h3>
+                        <table width="290" border="0" cellspacing="0" cellpadding="0" class="TLPrintAdSpecChart">
+                          <tr>
+                            <th scope="col"  class="chartAdSpecsHeader chartPaddingLeft">&nbsp;</th>
+                            <th scope="col"><h3 class="chartInches">INCHES</h3></th>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack chartBorderTop">SPREAD</td>
+                            <td class="chartRegBlack chartLastColumn chartBorderTop">15  X 9 5/8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">FULL  PAGE 8 ¼ X 10 3/4</td>
+                            <td class="chartRegBlack chartLastColumn">7 X  9 5/8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">2/3  PAGE</td>
+                            <td class="chartRegBlack chartLastColumn">4  1/2 X 9 5/8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">½  PAGE (DIGEST)</td>
+                            <td class="chartRegBlack chartLastColumn">4  1/2 X 7 1/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">½  PAGE (HORIZONTAL)</td>
+                            <td class="chartRegBlack chartLastColumn">6  7/8 X 4 3/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">½  PAGE (VERTICAL)</td>
+                            <td class="chartRegBlack chartLastColumn">3 1/8 X 9 5/8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">1/3  PAGE (VERTICAL)</td>
+                            <td class="chartRegBlack chartLastColumn">2  1/8 X 9 5/8</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack">1/3  PAGE (SQUARE)</td>
+                            <td class="chartRegBlack chartLastColumn">4  1/2 X 4 3/4</td>
+                          </tr>
+                          <tr>
+                            <td class="chartBlack chartLastRow">COVERS</td>
+                            <td class="chartRegBlack chartLastColumn chartLastRow">7 X  9 5/8</td>
+                          </tr>
+                        </table>
+                        <!--/table Non Bleed Standard Units -->
+
+                        <h2 id="TLPrintMaterialRequirements">Material Requirements</h2>
+                        <h3 class="hdrTLPrintAdSpecs">MAGAZINE TRIM SIZE</h3>
+                        <p>8 X 10 ½"</p>
+                        <h3 class="hdrTLPrintAdSpecs">COLUMNS</h3>
+                        <p>Three to a page</p>
+                        <h3 class="hdrTLPrintAdSpecs">PRINTING PROCESS</h3>
+                        <p>Web Offset, AAAA/MPA Standards</p>
+                        <h3 class="hdrTLPrintAdSpecs">BINDING METHOD</h3>
+                        <p>Perfect Bound</p>
+                        <h3 class="hdrTLPrintAdSpecs">PREFERRED MATERIALS</h3>
+                        <p>PDF-X-1A (4-color composite) digital files with total dot density/resolution of 300. Quark files will not be accepted.<br>
+                        <br>
+                        Instructions on creating PDF-X-1A files can be accessed at: <a href="www.direct2time.com">www.direct2time.com</a>
+                        </p>
+                        <h3 class="hdrTLPrintAdSpecs">SAFETY</h3>
+                        <p>All live matter must be a minimum of 3/8" from trim on all four sides.</p>
+
+                      </article>
+                        <!--/#TLPrint2013AdSpecsRight-->
+                    </article>
+                    <!--/#TLPrint2013AdSpecsContainer -->
+                </article>
+                <!--/#TLPrintProductionSpecs-->
+                <article id="TLPrintContacts" class="TLPrintHiddenContent">
+                	<h2 id="hdrPrintContacts">Contacts</h2>
+                    <article id="TLPrintContactsContainer">
+                    	<article id="TLPrintContact">
+                      	<p>
+                          <span class="contactBoldBlack">For Advertising Inquiries, Please Contact:</span><br>
+                          <span class="contactRegularBlack"><a href="mailto:Advertising_contact@timeinc.com">Advertising_contact@timeinc.com</a></span><br>
+                          <p>&nbsp;</p>
+                          <span class="contactBoldBlack">Vice President, Luxury Brand Sales</span><br>
+                          <span class="contactRegularBlack">Vanessa Feimer Davis, <a href="mailto:vanessa.davis@timeinc.com">vanessa.davis@timeinc.com</a></span><br>
+                          <br>
+												</p>
+                      </article>
+                      <!--/#TLPrintContact1-->
+                    </article>
+                    <!--/#TLPrintContactsContainer-->
+                </article>
+                <!--/#TLPrintContacts-->
+
+                <article id="TLPrintInternationalEditions" class="TLPrintHiddenContent">
+                	<h2 id="hdrPrintInternationalEditions">International Editions</h2>
+                    <article id="TLPrintInternationalEditionsIntro">
+                    	<img src="images/shim.gif" id="TLPrintInternationalLargeCover" alt="Travel + Leisure Global Editions" />
+                        <p class="TLPrintInternationalIntroBold">
+                        	Travel + Leisure, the world's most influential travel brand is the authority for affluent, influential individuals who make travel a priority in their lives, in the U.S. and around the world.
+                        </p>
+                        <h3 class="hdrTLPrintInternationalRed">WORLDWIDE REACH</h3>
+                        <p class="TLPrintInternationalIntro">
+                        	Travel + Leisure is a global brand powerhouse that continues to expand into the  most influential markets around the world:
+                         </p>
+                            <ul>
+                            	<li><span class="printInternationalBlack">China</span></li>
+                                <li><span class="printInternationalBlack">India &amp; South Asia</span></li>
+                                <li><span class="printInternationalBlack">Mexico</span></li>
+                                <li><span class="printInternationalBlack">Southeast Asia</span></li>
+                                <li><span class="printInternationalBlack">United States</span></li>
+                            </ul>
+
+                            <h3 class="hdrTLPrintInternationalBlack">INSIDE TRAVEL + LEISURE</h3>
+                            <p class="TLPrintInternationalIntro">
+                            Travel + Leisure global editions deliver locally adapted U.S. content along with original editorial features that inspire readers to experience the luxury, style, and culture of the world's most exciting and glamorous destinations.
+                        </p>
+                    </article>
+                    <!--/#TLPrintInternationalEditionsIntro-->
+                    <article id="TLPrintInternationalCovers">
+                    	<ul>
+                        	<li class="leftSideCover">
+                            	<img src="images/shim.gif" id="TLPrintInternationalCoverChina" alt="Travel + Leisure China Edition" />
+                                <h3>CHINA</h3>
+                                <h4>FREQUENCY<span class="blackType"> 12x</span></h4>
+                                <h4>CIRCULATION<span class="blackType"> 760,000</span></h4>
+                                <h4>RATE<span class="blackType"> $31,843 USD</span></h4>
+                                <h4><a href="http://www.travelandleisure.com/microsites/tlmediakit/pdf/china.pdf" target="_blank" style="color: #d2232a;">TERMS AND CONDITIONS</a></h4>
+                                <h4>DOWNLOAD<span class="blackType"> <a href="pdf/sellsheets-intl-china.pdf" target="_blank">Sellsheet</a></span></h4>
+                                <br/><br/>
+                            </li>
+                            <li class="centerCover">
+                            	<img src="images/shim.gif" id="TLPrintInternationalCoverMexico" alt="Travel + Leisure Mexico Edition" />
+                                <h3>MEXICO</h3>
+                                <h4>FREQUENCY<span class="blackType"> 11x</span></h4>
+                                <h4>CIRCULATION<span class="blackType"> 46,500</span></h4>
+                                <h4>RATE<span class="blackType"> $9,000 USD</span></h4>
+                                <h4><a href="http://www.travelandleisure.com/microsites/tlmediakit/pdf/mexico.pdf" target="_blank" style="color: #d2232a;">TERMS AND CONDITIONS</a></h4>
+                                <h4>DOWNLOAD<span class="blackType"> <a href="pdf/sellsheets-intl-mexico.pdf" target="_blank">Sellsheet</a></span></h4>
+                                <br/><br/>
+                            </li>
+                            <li class="rightSideCover">
+                            	<img src="images/shim.gif" id="TLPrintInternationalCoverIndia" alt="Travel + Leisure India and South Asia Edition" />
+                                <h3>INDIA AND SOUTH ASIA</h3>
+                                <h4>FREQUENCY<span class="blackType"> 12x</span></h4>
+                                <h4>CIRCULATION<span class="blackType"> 110,000</span></h4>
+                                <h4>RATE<span class="blackType"> $7,700 USD</span></h4>
+                                <h4><a href="http://www.travelandleisure.com/microsites/tlmediakit/pdf/india.pdf" target="_blank" style="color: #d2232a;">TERMS AND CONDITIONS</a></h4>
+                                <h4>DOWNLOAD<span class="blackType"> <a href="pdf/sellsheets-intl-india-southasia.pdf" target="_blank">Sellsheet</a></span></h4>
+                                <br/><br/>
+                            </li>
+                            <li class="leftSideCover shortCover">
+                            	<img src="images/shim.gif" id="TLPrintInternationalCoverAsia" alt="Travel + Leisure Southeast Asia Edition" />
+                                <h3>SOUTHEAST ASIA</h3>
+                                <h4>FREQUENCY<span class="blackType"> 12x</span></h4>
+                                <h4>CIRCULATION<span class="blackType"> 60,000</span></h4>
+                                <h4>RATE<span class="blackType"> $8,513 USD</span></h4>
+                                <h4><a href="http://www.travelandleisure.com/microsites/tlmediakit/images/4_tc_sea.pdf" style="color: #d2232a;">TERMS AND CONDITIONS</a></h4>
+                                <h4>DOWNLOAD<span class="blackType"> <a href="pdf/sellsheets-intl-southeast-asia.pdf" target="_blank">Sellsheet</a></span></h4>
+                                <br/><br/>
+                            </li>
+                            <li class="rightSideCover shortCover">
+                            	<img src="images/shim.gif" id="TLPrintInternationalCoverUsa" alt="Travel + Leisure USA Edition" />
+                                <h3>USA</h3>
+                                <h4>FREQUENCY<span class="blackType"> 12x</span></h4>
+                                <h4>CIRCULATION<span class="blackType"> 976,562</span></h4>
+                                <h4>RATE<span class="blackType"> $157,000 USD</span></h4>
+                                <br/><br/>
+                            </li>
+
+                        </ul>
+                        	<!-- <ul style="width: 100%;">
+                                   <li style="margin-top: 40px !important; ">
+                               	  <h3><strong>MARK P. ORWOLL</strong></h3>
+                                  <h4 style="color: #000000 !important;"><strong>EXECUTIVE EDITOR</strong></h4>
+                                    <h4 style="color: #000000 !important;">Tel +1.212.522.1074</h4>
+                                    <h4 style="color: #000000 !important;">mark.orwoll@timeinc.com</h4>
+                                </li></hr>
+                            	<li style="margin-top: 40px !important; ">
+                       	      <h3 ><strong>JOELLE QUINN</strong></h3>
+                               	  <h4 style="color: #000000 !important;"><strong>SENIOR DIRECTOR, <BR />AD SALES AND MARKETING</strong></h4>
+                                    <h4 style="color: #000000 !important;">Tel +1.212.522.8735</h4>
+                                    <h4 style="color: #000000 !important;">Joelle_quinn@time.inc.com</h4>
+                                </li>
+                            </ul> -->
+                        </article>
+                        <!--/#TLPrintInternationalEditionsMoreInfo-->
+                    </article>
+                    <!--/#TLPrintInternationalCovers-->
+                </article>
+                <!--/#TLPrintInternationalEditions-->
+
+            </article>
+            <!--/#TLRightContainer -->
+            <article class="clear">
+            </article>
+        	<!--/.clear-->
+        </section>
+       <footer>
+        <p>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+        </p>
+        </footer>
+    </section>
+	<!--/TLMainWrapper -->
+
+<!-- Begin AmexPub Google Analytics code -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3516775-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End AmexPub Google Analytics code -->
+
+<!-- omniture tag begins -->
+<div id="omniture" style="display:none">
+<script type="text/javascript">
+var s_account = "timetravelandleisure"; // timetravelandleisure for prod
+</script>
+<script type="text/javascript" src="http://www.travelandleisure.com/sites/all/modules/custom/ti_amg_tl_omniture/_tl_track.js"></script>
+<script type="text/javascript">
+s_time.pageName = "tl|microsites|tlmediakit|TLMEDIAKIT"; // page name
+s_time.prop5 = "microsites|tlmediakit"; // subchannel
+s_time.prop15 = "microsite" // content type
+s_time.prop16 = "microsites"; // site channel
+/************* PAGE CALL **************/
+var s_code=s_time.t();if(s_code){document.write(s_code);}
+</script>
+</div>
+<!-- omniture tag ends -->
+
+</body>
+</html>

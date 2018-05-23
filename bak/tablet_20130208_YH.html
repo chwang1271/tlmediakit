@@ -1,0 +1,584 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Amex Publishing Web</title>
+<link rel="stylesheet" href="css/global.css" />
+<!--[if IE 7]>
+<style type="text/css">
+
+	#TLRightContainer {
+    	margin-top:20px;
+        margin-left:50px;
+    }
+	#TLLeftContainerTablet {
+    	margin-left:45px;
+        width:300px;
+    }
+	#TLRightContainer{
+    
+    }
+	.TLWebContentHeader {
+    	margin-left:0px !important;
+        position:relative;
+        width:600px !important;
+    }
+</style>
+<![endif]-->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/jquery.ba-bbq.min.js"></script>
+<script>
+	$(document).ready(function(e){
+		var ua = $.browser;
+		if (ua.mozilla && parseFloat(ua.version.slice(0,3)) < 3.6) {
+			$('.chartHeaderCoverage').attr('style', 'margin-right:10px !important');
+			$('.chartHeaderAudience').attr('style', 'margin-right:10px !important');
+		}
+		if(window.location.hash) {
+			var hash = location.hash.replace("#","");
+			var activeSection = 'TL'+hash
+			$('.TLTabletActiveContent').removeClass('TLTabletActiveContent').addClass('TLTabletHiddenContent');
+			
+			$('#' + hash).addClass('activeTLWebNavButtons');
+			$('#' + activeSection).addClass('TLTabletActiveContent');
+			
+			$('html,body').animate({scrollTop: 0}, 100);
+		};
+
+		$('#TabletSecondaryNav a').click(function(e){
+			var $div = $($(this).attr('href'));
+			var $firstURL = window.location.pathname;
+			var $newURL = $(this).attr('href').replace('TL','');
+			$('.TLTabletActiveContent').removeClass('TLTabletActiveContent').addClass('TLTabletHiddenContent');
+			$div.addClass('TLTabletActiveContent');
+			$('.activeTLWebNavButtons').removeClass('activeTLWebNavButtons');
+			$(this).addClass('activeTLWebNavButtons');
+			//$('html,body').animate({scrollTop: 0}, 100);
+			//location.href = $firstURL+$newURL;
+			if ( $.browser.msie ) {
+				$('html,body').animate({scrollTop: 0}, 100);
+				location.href = $firstURL+$newURL;
+				}
+			else {
+				history.replaceState(null, '', $firstURL+$newURL);
+				}
+			return false;
+			});
+			
+		  $('#TLTabletHeader').click(function() {
+			  $('.TLTabletActiveContent').removeClass('TLTabletActiveContent');
+			  $('#TLTabletLanding').addClass('TLTabletActiveContent');
+			  $('.activeTLWebNavButtons').removeClass('activeTLWebNavButtons');
+		  });
+		  
+		  
+		  $('#TLInternalTabletLinkActive').click(function() {
+			  return false;
+		  });
+		  //$(window).trigger( 'hashchange' );
+	});
+</script>
+</head>
+<body>
+	<section id="TLMainWrapper">
+    	<header>
+        	<section id="TLLogo">
+            	<a id="TLHomeButton" href="index.html">Travel and Leisure Home</a>
+            </section>
+            <!-- /#T+LLogo -->
+            <section id="TLMediaKit">
+            	<a id="TLMediaKitButton" href="index.html">Travel and Leisure Media Kit</a>
+            </section>
+            <!--/#T+LMediaKit -->
+        </header>
+        <section id="TLTabletContainer">
+        	<article id="TLLeftContainer">
+            	<article id="TLLeftContainerTablet">
+                    <a id="TLTabletHeader" href="#">Web</a>
+                    <ul id="TabletSecondaryNav">
+                        <li><a href="#TLTabletAdSpecs" class="TLTabletNavButtons" id="TabletAdSpecs">Ad Specifications / Rates</a></li>
+                        <li><a href="#TLTabletPublicationDates" class="TLTabletNavButtons" id="TabletPublicationDates">Publication / Closing Dates</a></li>
+                        <li><a href="#TLTabletContacts" class="TLTabletNavButtons" id="TabletContacts">Contacts</a></li>
+                    </ul>
+                    <ul id="TLInternalNav">
+                    	<li><a id="TLInternalPrintLink" href="print.html">Print</a></li>
+                        <li><a id="TLInternalWebLink" href="web.html">Web</a></li>
+                        <li><a id="TLInternalTabletLinkActive" href="#">Tablet</a></li>
+                    </ul>
+                </article>
+                <!--/#TLLeftContainerPrint -->
+            </article>
+            <!--/#TLLeftContainer -->
+            <article id="TLRightContainer" class="TLTabletRight">
+            	<article id="TLTabletLanding" class="TLTabletActiveContent">
+                </article>
+                <!--/#TLTabletLanding-->
+                <article id="TLTabletAdSpecs" class="TLTabletHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrTabletAdSpecs">Ad Specifications / Rates</h2>
+                    <p class="TLTabletAdSpecs">
+                    <span class="tabletRed">Publication Policy</span>
+                    <br>
+                    All national full page and greater ads that have not opted out by Order Close Date will be included in the iPad&reg; edition as a Straight from Print (SFP) ad unless the advertiser's intention to run Designed for Tablet (DFT) ad or Enhanced for Tablet (EFT) ad is communicated to AMEX Publishing prior to Ad Close date.  
+                    <br>
+                    <br>
+                    You may not opt out of one device and run on another. If you opt out, you are opting out of all devices. (iPad, Kindle Fire&reg; and NOOKColor&reg;). 
+                    <br>
+                    <br>
+                    If there is a main URL in print, that URL will be activated on all devices this is inclusive of ads running straight from print (SFP) or designed for tablet (DFT) ad.  
+                    <br>
+                    <br>
+                    Flash is not supported on the iPad or Kindle Fire. HTML5 is now universally supported on the iPad and Kindle Fire. 
+                    <br>
+                    <br>
+                    All ads run in vertical orientation only. 
+                    <br>
+                    <br>
+                    <span class="tabletRed">SFP (Straight from Print):</span>
+                    <br>
+                    Non interactive ads resized for tablet directly from the supplied print ad (PDF X1a). They are automatically centered and proportionately scaled to best fit the device in portrait orientation. SFPs may have only one URL link on the creative for web activation. If there are multiple URLs, the main corporate URL will be activated. 
+                    <br>
+                    <br>
+                    <span class="tabletRed">DFT (Designed for Tablets):</span>
+                    <br>
+                    Non interactive ads designed to fit the 3:4 aspect ratio (iPad) and 6:19 aspect ratio (Kindle Fire) portrait orientation; DFTs may have only one URL link on the creative for web activation. If there are multiple URLs, the main corporate URL will be activated. 
+                    <br>
+                    <br>
+                    American Express Publishing will assist clients/agencies with Designed for Tablet (DFT) ads. Please check with your Sales Rep for production fees. 
+                    <br>
+                    <br>
+                    <span class="tabletRed">EFT (Enhanced for Tablets): </span>
+                    <br>
+                    Interactive ads that are designed to fit the 3:4 aspect ratio (iPad) and 6:19 aspect ratio (Kindle Fire) devices. Ads can take advantage of multi media app functionality to play content such as image slide shows, video, audio and/or web elements. Multiple URLs may be activated. 
+                    <br>
+                    <br>
+                    <strong>PDF Samples of digital ads that have run in our publication are available upon request. </strong>
+                    <br>
+                    <br>
+                    <span class="tabletRed">Rates</span>
+                    <br>
+                    <br>
+                    <strong>DIGITAL-ONLY ADS</strong> - $25,000 NET
+                    <br>
+                    <strong>EFT ADS</strong> - $15,000 NET
+                    <br>
+                    <br>
+                    <br>
+					iPad is a trademark of Apple Inc., registered in the U.S. and other countries. Kindle and Kindle Fire are trademarks of Amazon.com, Inc. or its affiliates. NOOKColor is a registered trademark of barnesandnoble.com llc or its affiliates.
+                    </p>
+              </article>
+                <!--/#TLTabletAdSpecs-->
+                <article id="TLTabletPublicationDates" class="TLTabletHiddenContent">
+                	<h2 id="hdrPublicationDatesTablet">2013 Publication And Closing Dates</h2><br>
+					<table id="TLTabletPublicationDatesChart">
+                      <tr>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartTabletIssue">Issue</p></th>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartTabletOrderMaterialClosing">Order + Materials Closing</p></th>
+                        <th scope="col" class="chartHeader"><p class="chartTabletSaleDate">On-Sale Date</p></th>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartBorderTop">February</td>
+                        <td class="chartBlack chartBorderTop">November 26th</td>
+                        <td class="chartBlack chartLastColumn chartBorderTop">January 10th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">March</td>
+                        <td class="chartBlack">December 20th</td>
+                        <td class="chartBlack chartLastColumn">February 7th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">April</td>
+                        <td class="chartBlack">January 24th</td>
+                        <td class="chartBlack chartLastColumn">March 7th </td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">May</td>
+                        <td class="chartBlack">February 26th</td>
+                        <td class="chartBlack chartLastColumn">April 11th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">June</td>
+                        <td class="chartBlack">March 27th</td>
+                        <td class="chartBlack chartLastColumn">May 9th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">July</td>
+                        <td class="chartBlack">May 1st</td>
+                        <td class="chartBlack chartLastColumn">June 13th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">August</td>
+                        <td class="chartBlack">May 29th</td>
+                        <td class="chartBlack chartLastColumn">July 11th </td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">September</td>
+                        <td class="chartBlack">June 27th</td>
+                        <td class="chartBlack chartLastColumn">August 15th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">October</td>
+                        <td class="chartBlack">August 1st</td>
+                        <td class="chartBlack chartLastColumn">September 12th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">November</td>
+                        <td class="chartBlack">August 27th</td>
+                        <td class="chartBlack chartLastColumn">October 10th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartLastRow">December</td>
+                        <td class="chartBlack chartLastRow">September 26th</td>
+                        <td class="chartBlack chartLastRow chartLastColumn">November 7th</td>
+                      </tr>
+                    </table>
+					<p class="TLTabletPublicationDates">
+                    	* Materials due include: SFP (Straight from Print), DFT (Designed for Tablet) and EFT <br>(Enhanced for Tablet)
+                    </p>
+                </article>
+                <!--/#TLTabletPublicationDates-->
+                <article id="TLTabletContacts" class="TLTabletHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrContactsTablet">Contacts</h2>
+                     <article id="TLTabletContactsContainer">
+                    	<article id="TLPrintContact1">
+                        	<p>
+                        	<span class="contactRed">EAST COAST</span><br> 
+                            <span class="contactBoldBlack">NEW YORK</span><br>
+                            Travel + Leisure<br>
+                            1120 Avenue of Americas<br>
+                            New York, NY 10036<br>
+                            Tel: 212-382-5600<br>
+                            Fax: 212-768-1568<br>
+                            <br>
+                            <span class="contactGrey">VP/Publisher</span><br>
+                            Jay Meyer<br> 
+                            Tel: 212-827-6487<br>
+                            Jay.L.Meyer@aexp.com<br>
+                            <br>
+                            <span class="contactGrey">Assistant</span><br>
+                            Kara Kaplan<br>
+                            Tel: 646-822-0103<br>
+                            Kara.E.Kaplan@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Travel Director</span><br>
+                            Jonathan Villani<br>
+                            Tel: 212-382-5850<br>
+                            Jonathan.J.Villani@aexp.com <br>
+                            <br>
+                            
+                            <span class="contactGrey">Advertising Operations Manager</span><br>
+                            Stefanie Nathanson<br>
+                            Tel: 212-382-5640<br>
+                            Stefanie.M.Nathanson@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Luxury + Fashion Director</span><br>
+                            Lily Givoni<br>
+                            Tel: 212-382-5672<br>
+                            Lily.Givoni@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Senior Account Manager</span><br>
+                            Nancy Forde<br>
+                            Tel: 646-822-0161<br>
+                            Nancy.E.Forde@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Senior Account Manager</span> <br>
+                            Brian Israel<br>
+                            Tel: 212-382-5834<br>
+                            Brian.J.Israel@aexp.com <br>
+                            <br>          
+                            <span class="contactGrey"> Senior Account Manager</span><br>
+                            Angelo Lombardo     <br>                   
+                            Tel: 212-382-5760<br>
+                            Angelo.Lombardo@aexp.com <br>
+                            <br>
+                           <span class="contactGrey"> Account Manager</span><br>
+                            Whitney Williams Frahm<br> 
+                            Tel: 212-382-5614<br>
+                            Whitney.W.Frahm@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Assistants</span><br>
+                            Gina Grammatica<br>
+                            Tel: 212-382-5539<br>
+                            Gina.Grammatica@aexp.com<br>
+                            <br>
+                            Francesca Scutari<br>
+                            Tel: 212-536-2077<br>
+                            fracesca.scutari@aexp.com<br>
+                            <br>
+                            Nicholas Urkonis<br>
+                            Tel: 646-366-8680<br>
+                            Nicholas.Urkonis@aexp.com <br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactBoldBlack">NEW ENGLAND</span><br>
+                            Lange Media<br>
+                            1344 Main Street<br>
+                            Waltham, MA 02451<br>
+                            Tel: 718-642-0400<br>
+                            Fax: 718-373-3681 <br>
+                            <br>
+                            <span class="contactGrey">Account Director</span><br>
+                            Eric Lange<br>
+                            erklange@aim.com<br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactBoldBlack">TORONTO/CANADA</span><br><br>
+                            Redden Media Solutions<br>
+                            525 Hillsdale Ave. E<br>
+                            Toronto, Ontario M4S 1V1<br>
+                            Canada<br>
+                            Tel: 647-342-2261<br>
+                            Fax: 647-343-0825<br>
+                            <br>
+                            <span class="contactGrey">Regional Director</span><br>
+                            Jim Redden<br>
+                            Cell: 416-543-7521<br>
+                            jim@reddenmediasolutions.com <br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactBoldBlack">ATLANTA</span><br>
+                            The DiCarlo Group<br>
+                            320 Maxwell Road, Suite 400<br>
+                            Alpharetta, GA, 30004<br>
+                            Tel: 770-667-9500<br>
+                            Fax: 770-667-9700 <br>
+                            <br>
+                            <span class="contactGrey">President + CEO</span><br>
+                            Tim DiCarlo<br>
+                            Tim@dicarlogroup.com<br>
+                            <br>
+                            
+                            </p>
+                      </article>
+                        <!--/#TLPrintContact1-->
+                        <article id="TLPrintContact2">
+                        	<p>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Stephen Wolek<br>
+                            305-667-9500<br>
+                            Stephen@dicarlogroup.com<br>
+                            <br>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Meagan King <br>
+                            Meagan@dicarlogroup.com<br>
+                            <br>
+                            <span class="contactGrey">Sales Associate</span><br>
+                            Dian Wescott<br>
+                            Dian@dicarlogroup.com<br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactRed">FLORIDA, CENTRAL &amp;<br>SOUTH AMERICA,AND THE CARIBBEAN</span>
+                            <br>
+                            <span class="contactBoldBlack">MIAMI</span><br>
+                            Blue Group Media<br>
+                            7301 SW 57th Court, Suite 570<br>
+                            Miami, FL 33143<br>
+                            Tel: 305-648-3338<br>
+                            Fax: 305-648-3349 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            <span class="contactGrey">Regional Director</span><br>
+                            Jill Stone <br>
+                            jstone@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Senior Account Manager</span><br>
+                            Eric Davis<br>
+                            edavis@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Rachel Sanders<br>
+                            rsanders@bluegroumedia.com <br>
+                            <br>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Megan Filanowski <br>
+                            mfilanowski@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Sales Coordinator</span><br>
+                            Susan Baxter<br>
+                            sbaxter@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Sales Coordinator</span><br>
+                            Joann Villanueva<br>
+                            jvillanueva@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactBoldBlack">MEXICO CITY</span><br>
+                            ADV Media Group<br>
+                            Sa De CV Homero 538-201<br>
+                            Polanco Mexico, DF CP11550<br>
+                            Tel: +52.55.5202.6412/6376 ext. 102<br>
+                            Fax: +52.55.5202.5684 <br>
+                            <br>
+                            <span class="contactGrey">Account Director</span><br>
+                            Pablo Glogovsky<br>
+                            Pablo@advmediagroup.com <br>
+                            <br>
+                            <span class="contactGrey">Assistant</span><br>
+                            Diana Guerra<br>
+                            Diana@advmediagroup.com <br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactRed">MIDWEST</span><br>
+                            <span class="contactBoldBlack">CHICAGO/DALLAS</span><br>
+                            Miller Dixon Media<br>
+                            625 North Michigan Avenue<br>
+                            Suite 250<br>
+                            Chicago, IL 60611<br>
+                            Tel: 312-440-6900<br>
+                            Fax: 312-440-4993<br>
+                            <br>
+                            <span class="contactGrey">Midwest Director</span><br>
+                            Kate Dixon<br>
+                            Tel: 312-440-6901<br>
+							Cell: 312-550-6900<br>
+                            kate@millerdixon.com <br>
+                            <br>
+                            <span class="contactGrey">Midwest Manager</span><br>
+                            Hillary Pavia <br>
+                            Tel: 312-440-6906<br>
+                            Cell: 804-366-7969<br>
+                            Hillary@millerdixon.com<br>
+                            <br>
+                            <span class="contactGrey">Midwest Online Manager</span><br>
+                            Kristy Lynch <br>
+                            Tel: 312-440-6908<br>
+                            Klynch@millerdixon.com<br>
+                            <br>
+                            <span class="contactGrey">Sales Associate</span><br>
+                            Libby Liesveld<br>
+                            Tel: 312-440-6905<br>
+                            libby@millerdixon.com<br>
+                            <br>
+                            </p>
+                        </article>
+                        <!--/#TLPrintContact1-->
+                        <article id="TLPrintContact3">
+                        	<p>
+                        	
+                            <span class="contactBoldBlack">DETROIT</span><br>
+                            Travel + Leisure<br>
+                            39577 Woodward Avenue <br>
+                            Suite 200 <br>
+                            Bloomfield Hills, MI 48304<br>
+                            Tel: 248-988-7763 <br>
+                            Fax: 248-988-7925 <br>
+                            <br>
+                            
+                            <span class="contactGrey">Detroit Director</span><br>
+                            Diane Paglino<br>
+                            Tel: 248-988-7740<br>
+                            Cell: 248-909-2760<br>
+                            diane.m.paglino@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Detroit Director</span><br>
+                            Lyn Kennedy <br>
+                            Tel: 248-988-7768<br>
+                            Cell: 248-909-6960<br>
+                            lyn.v.kennedy@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Assistant</span><br>
+                            Nichole Livingston <br>
+                            Tel: 248-988-7763<br>
+                            Cell: 313-595-0616<br>
+                            nichole.e.livingston@aexp.com <br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactRed">WEST COAST</span><br>
+                            <span class="contactBoldBlack">LOS ANGELES</span><br>
+                            Travel + Leisure<br>
+                            11766 Wilshire Blvd.<br>
+                            16th Floor<br>
+                            Los Angeles, CA 90025<br>
+                            Tel: 310-268-7200<br>
+                            Fax: 310-268-7604 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            <span class="contactGrey">Director of Emerging Markets</span><br>
+                            Kristin Nicholas<br>
+                            Tel: 310-268-7421 <br>
+                            Kristin.M.Nicholas@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Southwest Director </span><br>
+                            Jim Iacono<br>
+                            Tel: 310-268-7242<br>
+                            Cell: 310-850-7497<br>
+                            James.P.Iacono@aexp.com <br>
+                            <br>
+                            <span class="contactGrey">Assistant</span><br>
+                            Kimberly Jacobs <br>
+                            Tel: 310-268-7492<br>
+                            Kimberly.R.Jacobs@aexp.com <br>
+                            <br>
+                            <span class="contactBoldBlack">SAN FRANCISCO</span><br>
+                            SD Media<br>
+                            21 Tamal Vista Boulevard<br>
+                            Suite 207<br>
+                            Corte Madera, CA 94925<br>
+                            Tel: 415-496-2700<br>
+                            <br>
+                            <span class="contactGrey">Northwest Director</span><br>
+                            Steve Dveris<br>
+                            sdveris@sdmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Northwest Manager</span><br>
+                            Kelly Wagner<br>
+                            Cell: 415-225-6787
+                            kwagner@sdmedia.com <br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactRed">HAWAII</span><br>
+                            Sunn Media LLC<br>
+                            2225 Piimauna Street<br>
+                            Honolulu, HI 96821<br>
+                            Tel: 808-377-1900<br>
+                            Fax: 808-377-1995 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            Liane Sunn<br>
+                            Cell: 808-284-8700<br>
+                            liane@sunnmedia.com <br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactRed">LONDON</span><br>
+                            Publicitas<br>
+                            Gordon House 10 Greencoat Place<br>
+                            London SW1PH<br>
+                            Tel: +44-207-592-8306<br>
+                            <br>
+                            <span class="contactGrey">Sales Director</span><br>
+                            Jemima Villanueva<br>
+                            Cell: +44-7825-293-743<br>
+                            Jemima.villanueva@publicitas.com<br>
+                            <br>
+                            <span class="contactGrey">Sales Development Director</span><br>
+                            Jeremy Butchers<br>
+                            Cell: +44-7798-762-087<br>
+                            Jeremy.butchers@publicitas.com<br>
+                            <br>
+							</p>
+                        </article>
+                        <!--/#TLTabletContact1-->
+                    </article>
+                    <!--/#TLPrintContactsContainer-->
+                </article>
+                <!--/#TLTabletContacts-->
+            </article>
+            <!--/#TLRightContainer -->
+            <article class="clear">
+            </article>
+        	<!--/.clear-->
+        </section>
+        <!--/#TLTabletContainer-->
+       <footer>
+         <p>View <a class="TLFooterLinks" href="http://www.amexpub.com/termsofuse">Terms and Conditions</a> and <a class="TLFooterLinks" href="http://www.amexpub.com/privacy">Privacy Statement</a> of American Express Publishing Corporation. Users of this site agree to be bound by the terms<br>
+           of the American Express Publishing Corporation Website Terms and Conditions. Copyright © 1997 - 2013 American Express Publishing Corporation. All Rights Reserved.<br>
+  <br>
+           Trademarks and trade names are property of their respective owners. No association or endorsement implied. </p>
+       </footer>
+    </section>
+	<!--/TLMainWrapper -->
+</body>
+</html>

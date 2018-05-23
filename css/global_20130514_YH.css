@@ -1,0 +1,1487 @@
+
+@charset "utf-8";
+header, section, article, nav, footer {
+    display: block;
+}
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    text-align: center;
+}
+a {
+    outline: medium none;
+}
+#TLMainWrapper {
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    width: 1022px;
+}
+header {
+    height: 135px;
+    position: relative;
+    top: 28px;
+    width: 934px;
+}
+
+#AMEXPubButton {
+    background: url("../images/amexpub_logo.gif") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 45px;
+    text-indent: -99999px;
+    width: 259px;
+}
+
+a#TLHomeButton {
+    background: url("../images/imgTravelAndLeisureLogo.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 85px;
+    text-indent: -99999px;
+    width: 270px;
+}
+#TLMediaKitButton {
+    background: url("../images/btnT+LMediaKit.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: right;
+    height: 37px;
+    position: relative;
+    text-indent: -99999px;
+    top: 49px;
+    width: 219px;
+}
+#TLHomeContainer {
+    background: url("../images/bckgrndT+LHome.jpg") no-repeat scroll 0 0 transparent;
+    height: 1143px;
+    position: relative;
+    width: 934px;
+}
+#TLMissionStatementContainer {
+    background: url("../images/bckgrndT+LHomeIntroText.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 302px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 49px;
+    width: 372px;
+}
+#TLMissionStatementHeader {
+    background: url("../images/hdrT+LMissionStatement.png") no-repeat scroll 0 0 transparent;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 35px;
+    width: 372px;
+}
+#TLMissionStatementContent {
+    height: 136px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 53px;
+    width: 372px;
+}
+#TLMissionStatementContent p {
+    color: #FFFFFF;
+    font: 16px/20px Arial,Helvetica,sans-serif;
+    margin: 0 0 0 55px;
+    text-align: left;
+    width: 290px;
+}
+#TLHomeLinks {
+    float: left;
+    height: 200px;
+    left: 26px;
+    position: relative;
+    top: 106px;
+    width: 500px;
+}
+a.TLHomeNavLinks {
+    display: block;
+    float: left;
+    text-indent: -99999px;
+}
+a#TLPrint {
+    background: url("../images/btnPrint.png") no-repeat scroll 0 0 transparent;
+    height: 188px;
+    width: 140px;
+}
+a#TLPrint:hover {
+    background-position:0px -188px;
+}
+a#TLWeb {
+    background: url("../images/btnWeb.png") no-repeat scroll 0 0 transparent;
+    height: 188px;
+    width: 188px;
+}
+a#TLWeb:hover {
+    background-position:0px -188px;
+}
+a#TLTablet {
+    background: url("../images/btnTablet.png") no-repeat scroll 0 0 transparent;
+    height: 188px;
+    width: 139px;
+}
+a#TLTablet:hover {
+    background-position:0px -188px;
+}
+.clear {
+    clear: both;
+}
+#TLMainContainer {
+    float: left;
+    height: auto;
+    position: relative;
+    width: 934px;
+}
+#TLLeftContainer {
+    float: left;
+    height: auto;
+    position: relative;
+    width: 290px;
+}
+#TLPrintContainer {
+    height: auto;
+    position: relative;
+    width: 934px;
+}
+a#TLPrintHeader {
+    background: url("../images/hdrPrintSubNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 72px;
+    margin: 20px 0;
+    position: relative;
+    text-indent: -9999px;
+    top: 10px;
+    width: 290px;
+}
+a#TLPrintHeader.activeTLPrintNavButtons {
+    background-position: 0 0 !important;
+}
+
+a#TLWebHeader.activeTLWebNavButtons {
+    background-position: 0 0 !important;
+}
+
+a#TLTabletHeader.activeTLWebNavButtons {
+    background-position: 0 0 !important;
+}
+
+a#TLInternalPrintLinkActive.activeTLPrintNavButtons {
+    background-position: 0 0 !important;
+}
+a#TLInternalWebLink.activeTLPrintNavButtons {
+    background-position: 0 0 !important;
+}
+a#TLInternalTabletLink.activeTLPrintNavButtons {
+    background-position: 0 0 !important;
+}
+
+a#TLInternalPrintLink.activeTLWebNavButtons {
+	background-position: 0 0 !important;
+}
+
+a#TLInternalWebLinkActive.activeTLWebNavButtons {
+	background-position: 0 0 !important;
+}
+
+a#TLInternalTabletLink.activeTLWebNavButtons {
+	background-position: 0 0 !important;
+}
+#TLLeftContainerPrint {
+    float: left;
+    height: auto;
+    position: relative;
+}
+
+
+
+#PrintSecondaryNav {
+    list-style-type: none;
+}
+#PrintSecondaryNav li {
+    float: left;
+    height: 27px;
+    left: -40px;
+    position: relative;
+    width: 290px;
+}
+a.TLPrintNavButtons {
+    display: block;
+    height: 24px;
+    text-indent: -99999px;
+}
+.activeTLPrintNavButtons {
+    background-position: 0 -24px !important;
+}
+a#PrintAudienceMRI {
+    background: url("../images/btnAudienceMRI.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintAudienceMRI:hover {
+    background-position: 0 -24px;
+}
+a#PrintAudienceMRR {
+    background: url("../images/btnAudienceMMR.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintAudienceMRR:hover {
+    background-position: 0 -24px;
+}
+a#PrintCirculation {
+    background: url("../images/btnCirculation.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintCirculation:hover {
+    background-position: 0 -24px;
+}
+a#PrintRates {
+    background: url("../images/btnRates.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintRates:hover {
+    background-position: 0 -24px;
+}
+a#PrintPublication-ClosingDates {
+    background: url("../images/btnPubClosingDates.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintPublication-ClosingDates:hover {
+    background-position: 0 -24px;
+}
+a#PrintProductionSpecs {
+    background: url("../images/btnProductionSpecs.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintProductionSpecs:hover {
+    background-position: 0 -24px;
+}
+a#PrintContacts {
+    background: url("../images/btnContacts.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintContacts:hover {
+    background-position: 0 -24px;
+}
+a#PrintInternationalEditions {
+    background: url("../images/btnInternationalEditions.png") no-repeat scroll 0 0 transparent;
+}
+a#PrintInternationalEditions:hover {
+    background-position: 0 -24px;
+}
+#TLInternalNav {
+    left: 5px;
+    list-style-type: none;
+    position: relative;
+    top: 7px;
+}
+#TLInternalNav li {
+    float: left;
+    position: relative;
+}
+a#TLInternalPrintLinkActive {
+    background: url("../images/btnPrintLeftNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 104px;
+    margin-left: -50px;
+    text-indent: -99999px;
+    width: 90px;
+	background-position:0px -104px;
+}
+
+a#TLInternalWebLinkActive {
+    background: url("../images/btnWebLeftNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 104px;
+    text-indent: -99999px;
+    width: 112px;
+	background-position:0px -104px;
+}
+
+a#TLInternalTabletLinkActive {
+    background: url("../images/btnTabletLeftNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 104px;
+    text-indent: -99999px;
+    width: 90px;
+	background-position:0px -104px;
+}
+
+a#TLInternalPrintLink {
+    background: url("../images/btnPrintLeftNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 104px;
+    margin-left: -50px;
+    text-indent: -99999px;
+    width: 90px;
+}
+
+a#TLInternalPrintLink:hover {
+    background-position:0px -104px;
+}
+
+a#TLInternalWebLink {
+    background: url("../images/btnWebLeftNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 104px;
+    text-indent: -99999px;
+    width: 112px;
+}
+a#TLInternalWebLink:hover {
+	background-position:0px -104px;
+
+}
+a#TLInternalTabletLink {
+    background: url("../images/btnTabletLeftNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 104px;
+    text-indent: -99999px;
+    width: 92px;
+}
+a#TLInternalTabletLink:hover {
+    background-position:0px -104px;
+}
+#TLRightContainer {
+    float: left;
+    height: auto;
+    position: relative;
+    width: 590px;
+}
+#TLPrintLanding {
+    background: url("../images/imgPrintLanding.png") no-repeat scroll 0 0 transparent;
+    height: 553px;
+    position: relative;
+    top: 30px;
+    width: 584px;
+}
+#TLPrintAudienceMRI {
+    height: auto;
+    width: 590px;
+}
+#hdrAudienceMRI {
+    background: url("../images/hdrAudienceMRI.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 30px;
+    position: relative;
+    text-indent: -99999px;
+    width: 350px;
+}
+#TLPrintAudienceMRR {
+    height: auto;
+    width: 590px;
+}
+#hdrAudienceMRR {
+    background: url("../images/hdrAudienceMRR.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 30px;
+    text-indent: -99999px;
+    width: 495px;
+}
+#hdrPrintRates {
+    background: url("../images/hdrPrintRates.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 23px;
+    text-indent: -99999px;
+    width: 245px;
+}
+#hdrPrintPublication {
+    background: url("../images/hdrPublicationDates.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 23px;
+    text-indent: -99999px;
+    width: 566px;
+}
+#hdrPrintProduction {
+    background: url("../images/hdrPrintProduction.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 23px;
+    text-indent: -99999px;
+    width: 367px;
+}
+#TLPrintCirculation {
+    height: auto;
+    width: 590px;
+}
+#TLPrintRates {
+    height: auto;
+    width: 590px;
+}
+#TLPrintPublication-ClosingDates {
+    height: auto;
+    width: 590px;
+}
+#hdrPrintContacts {
+    background: url("../images/hdrPrintContacts.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 52px;
+    text-indent: -99999px;
+    width: 243px;
+}
+#hdrPrintInternationalEditions {
+    background: url("../images/hdrInternationalEditions.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 23px;
+    text-indent: -99999px;
+    width: 579px;
+}
+.TLPrintHiddenContent {
+    display: none;
+}
+.TLPrintActiveContent {
+    display: block;
+    left: 52px;
+    position: relative;
+    top: 8px;
+}
+
+.chartBorderTop {
+	border-top:1px solid #dbdbdb;	
+}
+.chartHeader {
+    color: #000000;
+    font: bold 16px/16px Arial,Helvetica,sans-serif;
+    height: 37px !important;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+}
+.chartHeaderLeadership {
+    height: 20px;
+    margin: -15px 0 0 0px;
+    width: 175px;
+}
+.chartHeaderAudience {
+    height: 20px;
+    margin: -15px 0 0 5px;
+    width: 153px;
+}
+.chartHeaderCoverage {
+    height: 20px;
+    margin: -15px 0 0 5px;
+    width: 142px;
+}
+.chartHeaderComp {
+    height: 20px;
+    margin: -15px 0 0 5px;
+    width: 94px;
+}
+.chartPaddingLeft {
+    border-right: 1px solid #DBDBDB;
+    margin-left: -1px;
+}
+.chartBorderLeft {
+    border-left: 1px solid #DBDBDB;
+}
+.chartBlue {
+    border-bottom: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    color: #00AFFF;
+    font: bold 12px/20px Arial,Helvetica,sans-serif;
+    height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.chartRed {
+    border-bottom: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    color: #EF3F35;
+    font: bold 12px/20px Arial,Helvetica,sans-serif;
+    height: 25px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.chartGrey {
+    background: none repeat scroll 0 0 #808184;
+    color: #FFFFFF;
+    font: bold 16px/28px Arial,Helvetica,sans-serif;
+    padding: 0 0 0 5px;
+    text-align: left;
+}
+.chartBlack {
+    border-bottom: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    color: #000000;
+    font: bold 12px/25px Arial,Helvetica,sans-serif;
+    padding-right: 8px;
+    text-align: right;
+    text-transform: uppercase;
+}
+.chartBoldBlack {
+    border-right: 1px solid #DBDBDB;
+    color: #000000;
+    font: bold 12px/12px Arial,Helvetica,sans-serif;
+    text-align: left;
+    text-transform: uppercase;
+}
+.chartLastRow {
+    border-bottom: 0 none !important;
+}
+.chartLastColumn {
+    border-right: 0 none !important;
+    padding-right: 0 !important;
+}
+#PrintRatesRateBaseBox {
+    background: url("../images/imgPrintRateBase.png") no-repeat scroll 0 0 transparent;
+    height: 57px;
+    left: 431px;
+    position: relative;
+    top: -70px;
+    width: 163px;
+}
+#TLPrintRatesChart {
+    position: relative;
+    top: -40px;
+}
+
+#TLPrintRatesChart .chartBlack {
+	
+}
+.centerBlack {
+	text-align:center !important;	
+}
+.chartRatesGrey {
+    background: none repeat scroll 0 0 #808184;
+    color: #FFFFFF;
+    font: bold 16px/28px Arial,Helvetica,sans-serif;
+    padding: 0 0 0 5px;
+    text-align: left;
+}
+
+.chartHeader1x {
+	position:relative;
+	left:50px;
+}
+
+.chartHeader6x {
+	position:relative;
+	left:60px;
+}
+
+.chartHeader12x {
+	position:relative;
+	left:70px;
+}
+
+
+.chartIssue {
+    color: #000000;
+    font: bold 16px/20px Arial,Helvetica,sans-serif;
+    height: auto !important;
+    margin: 0 0 0 4px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 126px;
+}
+.chartThemes {
+    color: #000000;
+    font: bold 16px/20px Arial,Helvetica,sans-serif;
+    height: auto !important;
+    margin: 0 0 0 4px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 230px;
+}
+.chartThemes-nocolor {
+    font: bold 16px/20px Arial,Helvetica,sans-serif;
+    height: auto !important;
+    margin: 0 0 0 4px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 230px;
+}
+.chartOrder {
+    color: #000000;
+    font: bold 16px/20px Arial,Helvetica,sans-serif;
+    height: auto !important;
+    margin: 0 0 0 4px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 126px;
+}
+.chartSaleDate {
+    color: #000000;
+    font: bold 16px/20px Arial,Helvetica,sans-serif;
+    height: auto !important;
+    margin: 0 0 0 4px;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 126px;
+}
+#TLPrintPublicationDatesChart .chartBlack {
+    padding: 0 0 0 4px !important;
+    text-align: left !important;
+    text-transform: none !important;
+}
+#TLPrintPublicationDatesChart .chartBlack ul li {
+    font: bold 12px/15px Arial,Helvetica,sans-serif;
+    height: auto;
+    left: -20px;
+    position: relative;
+    width: 188px;
+}
+#TLPrint2013AdSpecsContainer {
+    height: auto;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 590px;
+}
+#TLPrint2013AdSpecsLeft {
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 270px;
+}
+#TLPrint2013AdSpecsRight {
+    float: left;
+    height: auto;
+    margin: 0;
+    padding: 0;
+	left:20px;
+    position: relative;
+    width: 320px;
+}
+.chartInches {
+	font:bold 14px Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin-left:10px;
+}
+
+.hdrTLPrintAdSpecs {
+    color: #EF3F35;
+    font: bold 12px Arial,Helvetica,sans-serif;
+    text-align: left;
+}
+#TLPrintProductionSpecs p {
+    color: #000000;
+    font: 12px/16px Arial,Helvetica,sans-serif !important;
+    text-align: left;
+	position:relative;
+	top:-6px;
+}
+#TLPrintProductionSpecs ul {
+    margin: 0 0 0 -25px;
+}
+#TLPrintProductionSpecs ul li {
+    color: #EF3F35;
+    font: 12px/16px Arial,Helvetica,sans-serif !important;
+    text-align: left;
+	width:230px !important;
+}
+.printSpecBlack {
+    color: #000000;
+    text-align: left;
+}
+#TLPrintProductionSpecs a {
+    color: #5A5758;
+}
+.chartAdSpecsHeader {
+    color: #000000;
+    font: bold 16px/16px Arial,Helvetica,sans-serif;
+    height: 17px !important;
+    position: relative;
+    text-align: right;
+    text-transform: uppercase;
+}
+.TLPrintAdSpecChart .chartBlack {
+    text-align: left;
+}
+.chartRegBlack {
+    border-bottom: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    color: #000000;
+    font: 12px/25px Arial,Helvetica,sans-serif;
+    padding-left: 8px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.chartInches {
+}
+#TLPrintMaterialRequirements {
+    color: #000000;
+    font-family: Arial,Helvetica,sans-serif;
+	text-align:left;
+}
+#TLPrintInternationalCovers {
+	width:600px;
+	position:relative;
+}
+#TLPrintInternationalEditionsIntro {
+    border-bottom: 1px solid #DEDEDE;
+}
+#TLPrintInternationalEditionsIntro ul {
+    float: left;
+    position: relative;
+    width: 270px;
+    height: 30px;
+}
+#TLPrintInternationalEditionsIntro ul li {
+    color: #EF3F35;
+    float: left;
+    left: -25px;
+    position: relative;
+    text-align: left;
+    top: -25px;
+    width: 130px;
+}
+.printInternationalBlack {
+    color: #000000;
+    font: bold 14px Arial,Helvetica,sans-serif;
+    text-align: left;
+}
+.TLPrintInternationalIntroBold {
+    font: bold 14px/14px Arial,Helvetica,sans-serif;
+    text-align: left;
+}
+.TLPrintInternationalIntro {
+    font: 14px/16px Arial,Helvetica,sans-serif;
+    text-align: left;
+}
+.hdrTLPrintInternationalRed {
+    color: #D2232A;
+    font: bold 16px/14px Arial,Helvetica,sans-serif;
+    margin: 15px 0 -12px;
+    text-align: left;
+}
+.hdrTLPrintInternationalBlack {
+    color: #000000;
+    font: bold 14px/14px Arial,Helvetica,sans-serif;
+    text-align: left;
+	position:relative;
+	float:left;
+	height:17px;
+	width:285px;
+	margin:0px !important;
+}
+#TLPrintInternationalCovers ul {
+    height: auto;
+    left: -40px;
+    list-style-type: none;
+    position: relative;
+    width: 660px;
+}
+#TLPrintInternationalCovers ul li {
+    float: left;
+    height: 280px;
+    margin: 0;
+    padding: 0;
+    width: 217px;
+}
+.leftSideCover {
+    position: relative;
+    border-right: 1px solid #dbdbdb;
+    width: 185px !important;
+}
+.leftSideCover img {
+    left: -13px;
+    position: relative;
+}
+.centerCover {
+    margin: 0;
+    width:  !important;
+    padding: 0px 31px 0 31px !important;
+    width: 156px !important;
+}
+.centerCover img {
+    margin: 0;
+    position: relative;
+}
+.rightSideCover {
+    margin: 0;
+    position: relative;
+    border-left: 1px solid #dbdbdb;
+    padding-left: 31px!important;
+}
+.rightSideCover img {
+    left: -30px;
+    margin: 0;
+    position: relative;
+}
+	
+.shortCover {
+	height:253px !important;	
+}
+	
+#TLPrintInternationalLargeCover {
+    background: url("../images/imgTLPrintInternationalLargeCover.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 319px;
+    margin: 0 24px 0 0;
+    position: relative;
+    width: 252px;
+}
+#TLPrintInternationalCoverChina {
+    background: url("../images/imgTLPrintChina.png") no-repeat scroll 0 0 transparent;
+    height: 196px;
+    width: 156px;
+}
+#TLPrintInternationalCoverMexico {
+    background: url("../images/imgTLPrintMexico.png") no-repeat scroll 0 0 transparent;
+    height: 196px;
+    width: 156px;
+}
+#TLPrintInternationalCoverIndia {
+    background: url("../images/imgTLPrintIndia.png") no-repeat scroll 0 0 transparent;
+    height: 196px;
+    width: 156px;
+}
+#TLPrintInternationalCoverAsia {
+    background: url("../images/imgTLPrintAsia.png") no-repeat scroll 0 0 transparent;
+    height: 196px;
+   width: 156px;
+}
+#TLPrintInternationalCoverTurkey {
+    background: url("../images/imgTLPrintTurkey.png") no-repeat scroll 0 0 transparent;
+    height: 196px;
+    width: 156px;
+}
+#TLPrintInternationalCoverUsa {
+    background: url("../images/imgTLPrintUsa.png") no-repeat scroll 0 0 transparent;
+    height: 196px;
+    width: 156px;
+}
+
+#TLPrintInternationalCovers h3 {
+	color:#d2232a;
+	font:bold 15px/14px Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+
+#TLPrintInternationalCovers h4 {
+	color:#d2232a;
+	font:bold 10px/14px Arial, Helvetica, sans-serif;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+
+
+.blackType {
+	color:#000;	
+}
+/* Print Contacts */
+
+#TLPrintContactsContainer {
+	width:650px;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	height:auto;
+}
+
+.contactRed {
+	color:#ef3f35;
+	font-weight:bold;
+	display:block;
+	margin-bottom:-10px;
+	
+}
+
+.contactGrey {
+	color:#939598;
+}
+
+.contactBoldBlack {
+	color:#000;
+	font-weight:bold;
+	display:block;
+}
+
+
+
+#TLPrintContact1 {
+	width:200px;
+	position:relative;
+	float:left;
+	margin:0 8px 0 0;
+	padding:0;
+	height:1700px;	
+	border-right:1px solid #dbdbdb;
+	
+}
+
+#TLPrintContact1 p {
+	font:12px/14px Arial, Helvetica, sans-serif;	
+	text-align:left;
+}
+
+.TLPrintContactDivider {
+	border-top:1px solid #dbdbdb;
+	width:177px;
+	height:14px;
+	position:relative;
+	float:left;
+		
+}
+
+#TLPrintContact2 {
+	width:208px;
+	position:relative;
+	float:left;
+	margin:0 8px 0 0;
+	padding:0;
+	height:1700px;	
+	border-right:1px solid #dbdbdb;
+	
+}
+
+#TLPrintContact2 p {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	text-align:left;	
+}
+
+#TLPrintContact3 {
+	width:195px;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	height:auto;	
+}
+#TLPrintContact3 p {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	text-align:left;	
+}
+
+
+#TLPrintInternationalEditionsMoreInfo {
+	background:url(../images/hdrPrintInternationalInfo.png);
+	width:583px;
+	position:relative;
+	float:left;
+	height:100px;	
+	top:20px;
+}
+
+#TLPrintInternationalEditionsMoreInfo ul {
+	list-style-type:none;	
+	position:relative;
+	left:150px;
+	top:-5px;
+}
+
+#TLPrintInternationalEditionsMoreInfo li {
+	width:190px;
+	height:100px;
+	text-align:left;
+	color:#fff;
+	font:14px/16px Arial, Helvetica, sans-serif;
+}
+
+/* WEB */
+
+#TLWebContainer {
+    height: auto;
+    position: relative;
+    width: 934px;
+}
+
+#TLLeftContainerWeb {
+    float: left;
+    height: auto;
+    position: relative;
+
+}
+a#TLWebHeader {
+    background: url("../images/hdrWebSubNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 72px;
+    margin: 20px 0;
+    position: relative;
+    text-indent: -9999px;
+    top: 10px;
+    width: 290px;
+}
+
+
+
+#WebSecondaryNav {
+    list-style-type: none;
+}
+#WebSecondaryNav li {
+    float: left;
+    height: 27px;
+    left: -40px;
+    position: relative;
+    width: 290px;
+}
+a.TLWebNavButtons {
+    display: block;
+    height: 24px;
+    text-indent: -99999px;
+}
+
+a.TLWebNavButtons:hover {
+	background-position:0px -24px !important;	
+}
+.activeTLWebNavButtons {
+    background-position: 0 -24px !important;
+}
+
+a#WebAudience {
+	background:url(../images/btnAudience.png) no-repeat;
+}
+
+a#WebCustomRichMedia {
+	background:url(../images/btnCustomRichMedia.png) no-repeat;	
+}
+
+a#WebMediaTargeting {
+	background:url(../images/btnsMediaTargeting.png) no-repeat;	
+}
+
+a#WebAdSpecs {
+	background:url(../images/btnsAdSpecs.png) no-repeat;	
+}
+
+a#WebContacts {
+	background:url(../images/btnsContacts.png) no-repeat;	
+}
+.TLWebHiddenContent {
+    display: none;
+}
+.TLWebActiveContent {
+    display: block;
+    left: 52px;
+    position: relative;
+    top: 8px;
+}
+
+#TLWebLanding {
+    background: url("../images/imgWebLanding.png") no-repeat scroll 0 0 transparent;
+    height: 553px;
+    position: relative;
+    top: 30px;
+    width: 584px;
+}
+
+#TLWebAudience {
+	position: relative;
+    width: 584px;	
+	height:auto;
+}
+
+
+#TLWebCustomRichMedia {
+	position: relative;
+    width: 584px;	
+	height:auto;
+}
+
+#TLWebMediaTargeting {
+	position: relative;
+    width: 584px;	
+	height:auto;
+}
+
+#TLWebContacts {
+	position: relative;
+    width: 584px;	
+	height:auto;
+}
+
+#TLRightContainer h2 {
+	display:block;
+	text-indent:-99999px;	
+}
+
+#TLRightContainer p {
+	font-family:Arial, Helvetica, sans-serif;	
+	text-align:left;
+}
+
+.TLWebRight p {
+	width:600px;	
+}
+
+.TLWebAudience {
+	font:13px/16px Arial, Helvetica, sans-serif;	
+}
+
+#TLWebAudience ul {
+	position:relative;
+	left:-20px;
+}
+
+#TLWebAudience ul li {
+	font:13px/16px Arial, Helvetica, sans-serif;	
+	text-align:left;	
+	color:#d2232a;
+}
+
+.webAudienceBlack {
+	color:#000;	
+}
+
+#hdrWebAudience {
+	background:url(../images/hdrWebAudience.png) no-repeat;
+	width:153px;
+		
+}
+#hdrCustomRichMedia {
+	background:url(../images/hdrWebCustomRichMedia.png) no-repeat;
+	width:288px;	
+}
+
+
+.webRed {
+    color: #EF3F35;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -15px;
+    font: bold 13px/16px arial, helvetica, sans-serif;
+	height:20px;
+}
+	
+
+
+.TLCustomRichMedia {
+	font:13px/14px Arial, Helvetica, sans-serif;
+}
+
+.TLCustomRichMedia a {
+	color:#5a5758;	
+}
+
+#hdrWebMediaTargeting {
+	background:url(../images/hdrWebMediaTargeting.png) no-repeat;
+	width:249px;	
+}
+
+.TLWebMediaTargeting {
+	font:13px/15px Arial, Helvetica, sans-serif;
+	
+}
+
+#TLWebMediaTargeting ul {
+	position:relative;
+	left:-20px;	
+}
+
+#TLWebMediaTargeting ul li {
+	font:13px/15px Arial, Helvetica, sans-serif;
+	text-align:left;	
+	color:#d2232a;		
+}
+
+
+.webMediaTargetingBlack {
+	color:#000;	
+}
+
+
+#TLWebContacts p {
+	text-align:left;
+	font:13px/15px Arial, Helvetica, sans-serif;	
+}
+#hdrWebContacts {
+	background:url(../images/hdrWebContacts.png) no-repeat;
+	width:154px;	
+}
+
+#TLWebContactsLeft {
+	position:relative;
+	float:left;
+	width:250px;
+	height:auto;	
+}
+
+#TLWebContactsRight {
+	position:relative;
+	float:left;
+	width:250px;
+	height:auto;	
+}
+
+#TLPrint2013AdSpecsLeft p {
+	width:230px;
+	line-height:16px !important;
+}	
+
+#TLWebContacts .contactRed {
+    bottom: 3px;
+    clear: both;
+    display: inline;
+    float: left;
+    position: relative;
+    width: 250px !important;
+}
+
+/* TABLET  */
+#TLLeftContainerTablet {
+    float: left;
+    height: auto;
+    position: relative;
+}
+
+#TLTabletHeader {
+	background: url("../images/hdrTabletSubNav.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    float: left;
+    height: 72px;
+    margin: 20px 0;
+    position: relative;
+    text-indent: -9999px;
+    top: 10px;
+    width: 310px;
+}
+
+#TabletSecondaryNav {
+    list-style-type: none;
+}
+#TabletSecondaryNav li {
+    float: left;
+    height: 27px;
+    left: -40px;
+    position: relative;
+    width: 310px;
+}
+a.TLTabletNavButtons {
+    display: block;
+    height: 24px;
+    text-indent: -99999px;
+}
+
+a#TabletDevicesPolicy {
+	display:none;
+	background:url(../images/btnsDevicesPublicationPolicy.png) no-repeat;
+}
+
+a#TabletAdSpecs {
+	background:url(../images/btnsAdSpecsRates.png) no-repeat;	
+}
+
+a#TabletContacts {
+	background:url(../images/btnsContactsTablet.png) no-repeat;	
+}
+
+a#TabletPublicationDates {
+	
+	background:url(../images/btnsPubClosingDates.png) no-repeat;
+}
+
+a.TLTabletNavButtons:hover {
+	background-position:0px -24px !important;	
+}
+.activeTLTabletNavButtons {
+    background-position: 0 -24px !important;
+}
+.TLTabletHiddenContent {
+    display: none;
+}
+.TLTabletActiveContent {
+    display: block;
+    left: 75px;
+    position: relative;
+    top: 8px;
+}
+
+
+#TLTabletLanding {
+	background:url(../images/imgTabletLanding.png) no-repeat;
+    height: 528px;
+    position: relative;
+    top: 30px;
+    width: 564px;	
+}
+
+
+#hdrTabletAdSpecs {
+	background:url(../images/hdrAdSpecs+RatesTablet.png) no-repeat;
+	width:381px;	
+}
+
+#hdrPublicationDatesTablet {
+	background:url(../images/hdrPublicationClosingDatesTablet.png) no-repeat;
+	width:561px;	
+}
+
+
+#hdrContactsTablet {
+	background:url(../images/hdrPrintContacts.png) no-repeat;
+	width:243px;
+	height:52px !important;
+}
+
+.TLTabletAdSpecs {
+	font:13px/14px Arial, Helvetica, sans-serif;
+}
+
+.TLTabletAdSpecs a {
+	color:#5a5758;	
+}
+
+#TLTabletPublicationDatesChart{
+	width:565px;
+	border:none;
+	padding:none;	
+	border-spacing:0;
+ 	 border-collapse:collapse;
+}
+
+
+#TLTabletPublicationDatesChart .chartBlack {
+    border-bottom: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB;
+    color: #000000;
+    font: bold 12px/25px Arial,Helvetica,sans-serif;
+    padding-right: 8px;
+    text-align: right;
+    text-transform: none;
+}
+.tabletRed {
+    color: #EF3F35;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: -15px;
+    font: bold 13px/14px arial, helvetica, sans-serif;
+	height:20px;
+}
+
+.chartTabletIssue {
+    color: #000000;
+    font: bold 16px/19px Arial,Helvetica,sans-serif;
+    margin: 0;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    width: 144px;
+}
+.chartTabletOrderMaterialClosing {
+    color: #000000;
+    font: bold 16px/19px Arial,Helvetica,sans-serif;
+    margin: 0 0px 0 0px;
+    position: relative;
+    text-align: right !important;
+    text-transform: uppercase;
+    width: 246px;
+	padding:0px 0 0 15px;
+}
+.chartTabletSaleDate {
+    color: #000000;
+    font: bold 16px/19px Arial,Helvetica,sans-serif;
+    margin: 0 0 0 -1px;
+    position: relative;
+    text-align: right !important;
+    text-transform: uppercase;
+    width: 130px;
+}
+
+
+#TLTabletContactsContainer {
+	width:650px;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	height:auto;
+}
+
+#TLTabletContact1 {
+	width:200px;
+	position:relative;
+	float:left;
+	margin:0 8px 0 0;
+	padding:0;
+	height:1400px;	
+	border-right:1px solid #dbdbdb;
+	
+}
+
+#TLTabletContact1 p {
+	font:12px/14px Arial, Helvetica, sans-serif;	
+	text-align:left;
+}
+
+.TLTabletContactDivider {
+	border-top:1px solid #dbdbdb;
+	width:177px;
+	height:14px;
+	position:relative;
+	float:left;
+		
+}
+
+#TLTabletContact2 {
+	width:208px;
+	position:relative;
+	float:left;
+	margin:0 8px 0 0;
+	padding:0;
+	height:1400px;	
+	border-right:1px solid #dbdbdb;
+	
+}
+
+#TLTabletContact2 p {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	text-align:left;	
+}
+
+#TLTabletContact3 {
+	width:195px;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+	height:auto;	
+}
+#TLTabletContact3 p {
+	font:12px/14px Arial, Helvetica, sans-serif;
+	text-align:left;	
+}
+
+.TLTabletPublicationDates {
+	font:bold 13px/14px Arial, Helvetica, sans-serif;
+	color:#000; 	
+	position:relative;
+	top:20px;
+}
+/* FOOTER */
+
+
+
+footer {
+    height: auto;
+    position: relative;
+    width: 934px;
+}
+footer p {
+    color: #5A5758;
+    font: 10px/14px Arial,Helvetica,sans-serif;
+    height: 60px;
+    left: 70px;
+    margin-top: 90px;
+    position: relative;
+    width: 800px;
+}
+a#TLTermsConditions {
+    color: #5A5758;
+    font: 10px/14px Arial,Helvetica,sans-serif;
+    text-decoration: underline;
+}
+a#TLTermsConditions:hover {
+    color: #EF3E35;
+    font: 10px/14px Arial,Helvetica,sans-serif;
+    text-decoration: underline;
+}
+.TLFooterLinks {
+    color: #5A5758;
+    font: 10px/14px Arial,Helvetica,sans-serif;
+    text-decoration: underline;
+}
+.TLFooterLinks:hover {
+    color: #EF3E35;
+    font: 10px/14px Arial,Helvetica,sans-serif;
+    text-decoration: underline;
+}

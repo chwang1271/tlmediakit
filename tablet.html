@@ -1,0 +1,629 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Travel + Leisure Mediakit</title>
+<link rel="stylesheet" href="css/global.css" />
+<!--[if IE 7]>
+<style type="text/css">
+
+	#TLRightContainer {
+    	margin-top:20px;
+        margin-left:50px;
+    }
+	#TLLeftContainerTablet {
+    	margin-left:45px;
+        width:300px;
+    }
+	#TLRightContainer{
+    
+    }
+	.TLWebContentHeader {
+    	margin-left:0px !important;
+        position:relative;
+        width:600px !important;
+    }
+</style>
+<![endif]-->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="js/html5.js"></script>
+<script src="js/jquery.ba-bbq.min.js"></script>
+<script>
+	$(document).ready(function(e){
+		var ua = $.browser;
+		if (ua.mozilla && parseFloat(ua.version.slice(0,3)) < 3.6) {
+			$('.chartHeaderCoverage').attr('style', 'margin-right:10px !important');
+			$('.chartHeaderAudience').attr('style', 'margin-right:10px !important');
+		}
+		if(window.location.hash) {
+			var hash = location.hash.replace("#","");
+			var activeSection = 'TL'+hash
+			$('.TLTabletActiveContent').removeClass('TLTabletActiveContent').addClass('TLTabletHiddenContent');
+			
+			$('#' + hash).addClass('activeTLWebNavButtons');
+			$('#' + activeSection).addClass('TLTabletActiveContent');
+			
+			$('html,body').animate({scrollTop: 0}, 100);
+		};
+
+		$('#TabletSecondaryNav a').click(function(e){
+			var $div = $($(this).attr('href'));
+			var $firstURL = window.location.pathname;
+			var $newURL = $(this).attr('href').replace('TL','');
+			$('.TLTabletActiveContent').removeClass('TLTabletActiveContent').addClass('TLTabletHiddenContent');
+			$div.addClass('TLTabletActiveContent');
+			$('.activeTLWebNavButtons').removeClass('activeTLWebNavButtons');
+			$(this).addClass('activeTLWebNavButtons');
+			//$('html,body').animate({scrollTop: 0}, 100);
+			//location.href = $firstURL+$newURL;
+			if ( $.browser.msie ) {
+				$('html,body').animate({scrollTop: 0}, 100);
+				location.href = $firstURL+$newURL;
+				}
+			else {
+				history.replaceState(null, '', $firstURL+$newURL);
+				}
+			return false;
+			});
+			
+		  $('#TLTabletHeader').click(function() {
+			  $('.TLTabletActiveContent').removeClass('TLTabletActiveContent');
+			  $('#TLTabletLanding').addClass('TLTabletActiveContent');
+			  $('.activeTLWebNavButtons').removeClass('activeTLWebNavButtons');
+		  });
+		  
+		  
+		  $('#TLInternalTabletLinkActive').click(function() {
+			  return false;
+		  });
+		  //$(window).trigger( 'hashchange' );
+	});
+</script>
+</head>
+<body>
+	<section id="TLMainWrapper">
+    	<header>
+        	<section id="TLLogo">
+            	<a id="TLHomeButton" href="index.html">Travel and Leisure Home</a>
+            </section>
+            <!-- /#T+LLogo -->
+            <section id="TLMediaKit">
+            	<a id="TLMediaKitButton" href="index.html">Travel and Leisure Media Kit</a>
+            </section>
+            <!--/#T+LMediaKit -->
+        </header>
+        <section id="TLTabletContainer">
+        	<article id="TLLeftContainer">
+            	<article id="TLLeftContainerTablet">
+                    <a id="TLTabletHeader" href="#">Web</a>
+                    <ul id="TabletSecondaryNav">
+                        <li><a href="pdf/designed-for-tablet-specs.pdf" class="TLTabletNavButtons" id="TabletDesignedTabletSpecs" target="_blank">Designed for Tablet Specs</a></li>
+                        <li><a href="pdf/enhanced-for-tablet-specs.pdf" class="TLTabletNavButtons" id="TabletEnhancedTabletSpecs" target="_blank">Enhanced for Tablet Specs</a></li>
+                        <li><a href="#TLTabletPublicationDates" class="TLTabletNavButtons" id="TabletPublicationDates">Publication / Closing Dates</a></li>
+                        <li><a href="#TLTabletContacts" class="TLTabletNavButtons" id="TabletContacts">Contacts</a></li>
+                    </ul>
+                    <ul id="TLInternalNav">
+                    	<li><a id="TLInternalPrintLink" href="print.html">Print</a></li>
+                        <li><a id="TLInternalWebLink" href="web.html">Web</a></li>
+                        <li><a id="TLInternalTabletLinkActive" href="#">Tablet</a></li>
+                    </ul>
+                </article>
+                <!--/#TLLeftContainerPrint -->
+            </article>
+            <!--/#TLLeftContainer -->
+            <article id="TLRightContainer" class="TLTabletRight">
+            	<!-- <article id="TLTabletLanding" class="TLTabletActiveContent">
+                </article> -->
+                <!--/#TLTabletLanding-->
+                <article id="TLTabletAdSpecs" class="TLTabletHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrTabletAdSpecs">Ad Specifications / Rates</h2>
+                    <p class="TLTabletAdSpecs">
+                    <span class="tabletRed">Publication Policy</span>
+                    <br>
+                    Supported Devices:
+                    <br>
+                    <br>
+                    &#8226; iOS devices include iPad 1, 2, iPad Retina 3, 4, iPad Mini
+                    <br>
+                    &#8226; Android devices include Kindle Fire, Kindle HD7, HD8.9, Nook Color
+                    <br>
+                    <br>
+                    All national full page and greater ads that have not opted out by <strong>Order Close Date</strong> will be included on the iOS and Android editions as a <strong>Straight from Print (SFP)</strong> ad unless the advertiser's intention to run <strong>Designed for Tablet (DFT)</strong> ad or <strong>Enhanced for Tablet (EFT)</strong> ad is communicated to AMEX Publishing prior to <strong>Ad Close date</strong>. 
+                    <br>
+                    <br>
+                    You may not opt out of one device and run on another. If you opt out, you are opting out of all devices. (iOS and Android). 
+                    <br>
+                    <br>
+                    If there is a main URL in print, that URL will be activated on the <strong>Straight-from-Print (SFP)</strong> version of the ad on all devices that support URL activation.
+                    <br>
+                    <br>
+                    Flash is not consistently supported on the iOS and Android devices.
+                    <br>
+                    <br>
+                    HTML5 is now universally supported on the iOS and Android platforms. 
+                    <br>
+                    <br>
+                    All ads run in vertical (portrait) orientation only. 
+                    <br>
+                    <br>
+                    <strong>SFP (STRAIGHT FROM PRINT), DFT (DESIGNED FOR TABLET), EFT (ENHANCED FOR TABLET) AND DIGITAL-ONLY ADS</strong>
+                    <br>
+                    <br>
+                    <span class="tabletRed">SFP (Straight from Print) ads:</span>
+                    <br>
+                    Non-interactive ads resized for tablet directly from the supplied print ad (PDF X1a). They are automatically centered and proportionately scaled to best fit the device in portrait orientation. <strong>SFP</strong>s may have only one URL link on the creative for web-activation. If there are multiple URLs, the main corporate URL will be activated. 
+                    <br>
+                    <br>
+                    <span class="tabletRed">DFT (Designed for Tablets) ads:</span>
+                    <br>
+                    Non-interactive ads designed to fit the iOS and Android devices in portrait orientation; <strong>DFT</strong>s may have only one URL link on the creative for web-activation. If there are multiple URLs, the main corporate URL will be activated. 
+                    <br>
+                    <br>
+                    <span class="tabletRed">EFT (Enhanced for Tablets) ads: </span>
+                    <br>
+                    Interactive ads that are designed to fit the iOS and Android devices in portrait-orientation. Ads can take advantage of multi-media app functionality to play content such as image slide-shows, video, audio and/or web elements. Multiple URLs may be activated. 
+                    <br>
+                    <br>
+                    <span class="tabletRed">Digital-Only ads:</span>
+                    <br>
+                    Digital-Only ads are ads that run on the tablet but do not appear in the print version of the issue. Digital-Only ads may be static (no functionality) or enchanced.
+                    <br>
+                    <br>
+                    <br>
+                    <a href="termsofuse.html" target="_blank">View Advertiser Terms and Conditions</a>
+                    </p>
+              </article>
+                <!--/#TLTabletAdSpecs-->
+                <article id="TLTabletPublicationDates" class="TLTabletHiddenContent">
+                	<h2 id="hdrPublicationDatesTablet">2015 Publication And Closing Dates</h2><br>
+					<table id="TLTabletPublicationDatesChart">
+                      <tr>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartTabletIssue">Issue</p></th>
+                        <th scope="col" class="chartHeader chartPaddingLeft"><p class="chartTabletOrderMaterialClosing">Order + Materials Closing</p></th>
+                        <th scope="col" class="chartHeader"><p class="chartTabletSaleDate">On-Sale Date</p></th>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartBorderTop">January</td>
+                        <td class="chartBlack chartBorderTop">October 27th</td>
+                        <td class="chartBlack chartLastColumn chartBorderTop">December 19th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartBorderTop">February</td>
+                        <td class="chartBlack chartBorderTop">November 24th</td>
+                        <td class="chartBlack chartLastColumn chartBorderTop">January 16th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">March</td>
+                        <td class="chartBlack">December 22th</td>
+                        <td class="chartBlack chartLastColumn">February 13th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">April</td>
+                        <td class="chartBlack">January 27th</td>
+                        <td class="chartBlack chartLastColumn">March 20th </td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">May</td>
+                        <td class="chartBlack">February 25th</td>
+                        <td class="chartBlack chartLastColumn">April 17th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">June</td>
+                        <td class="chartBlack">March 25th</td>
+                        <td class="chartBlack chartLastColumn">May 15th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">July</td>
+                        <td class="chartBlack">April 29th</td>
+                        <td class="chartBlack chartLastColumn">June 19th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">August</td>
+                        <td class="chartBlack">May 26th</td>
+                        <td class="chartBlack chartLastColumn">July 17th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">September</td>
+                        <td class="chartBlack">June 29th</td>
+                        <td class="chartBlack chartLastColumn">August 21th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">October</td>
+                        <td class="chartBlack">July 29th</td>
+                        <td class="chartBlack chartLastColumn">September 18th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed">November</td>
+                        <td class="chartBlack">August 24th</td>
+                        <td class="chartBlack chartLastColumn">October 16th</td>
+                      </tr>
+                      <tr>
+                        <td class="chartRed chartLastRow">December</td>
+                        <td class="chartBlack chartLastRow">September 30th</td>
+                        <td class="chartBlack chartLastRow chartLastColumn">November 20th</td>
+                      </tr>
+                    </table>
+					<p class="TLTabletPublicationDates">
+                    	* Materials due include: SFP (Straight from Print), DFT (Designed for Tablet) and EFT <br>(Enhanced for Tablet)
+                    </p>
+                </article>
+                <!--/#TLTabletPublicationDates-->
+                <article id="TLTabletContacts" class="TLTabletHiddenContent">
+                	<h2 class="TLWebContentHeader" id="hdrContactsTablet">Contacts</h2>
+                    <article id="TLPrintContactsContainer">
+                    	<article id="TLPrintContact1">
+                        	<p>
+                        	<span class="contactRed">EAST COAST</span><br> 
+                            <span class="contactBoldBlack">NEW YORK</span><br>
+                            Travel + Leisure<br>
+                            1271 Avenue of Americas<br>
+                            New York, NY 10020<br>
+                            Tel: 212-522-1212<br>
+                            <br>
+                            <span class="contactGrey">VP/Publisher</span><br>
+                            Jay Meyer<br> 
+                            Tel: 212-522-2127<br>
+                            Jay.Meyer@travelandleisure.com<br>
+                            <br>
+                            <span class="contactGrey">VP/Associate Publisher</span><br>
+                            Matthew Carroll <br> 
+                            Tel: 212-522-1395 <br>
+                            Matt.Carroll@travelandleisure.com<br>
+                            <br>
+                            <span class="contactGrey">VP/Executive Digital Director</span><br>
+                            Nick Van Sicklen<br> 
+                            Tel: 212-522-2377<br>
+                            Nick.VanSicklen@timeinc.com <br>
+                            <br>
+                            <span class="contactGrey">Advertising Director, Digital</span><br>
+                            Jennifer Bayard<br> 
+                            Tel: 212-522-0596<br>
+                            Jennifer.Bayard@timeinc.com<br>
+                            <br>
+                            <span class="contactGrey">Assistant to the Publisher</span><br>
+                            Kara Kaplan<br>
+                            Tel: 212-522-0152<br>
+                            Kara.Kaplan@travelandleisure.com <br>
+                            <br>
+                            <span class="contactGrey">Advertising Operations Manager</span><br>
+                            Stefanie Nathanson<br>
+                            Tel: 212-522-0845<br>
+                            Stefanie.Nathanson@travelandleisure.com <br>
+                            <br>
+                            <span class="contactGrey">Luxury + Fashion Director</span><br>
+                            Lily Givoni<br>
+                            Tel: 212-522-0920<br>
+                            Lily.Givoni@travelandleisure.com <br>
+                            <br>
+                            
+                            <span class="contactGrey">Travel Director </span> <br>
+                            Brian Israel<br>
+                            Tel: 212-522-1937<br>
+                            Brian.Israel@travelandleisure.com <br>
+                            <br>  
+                            <span class="contactGrey">Account Director</span> <br>
+                            Caren Kabot<br>
+                            Tel: 212-522-2437<br>
+                            Caren.Kabot@travelandleisure.com<br>
+                            <br>        
+                            <span class="contactGrey">Account Director</span><br>
+                            Angelo Lombardo<br>                   
+                            Tel: 212-522-1244<br>
+                            Angelo.Lombardo@travelandleisure.com <br>
+                            <br>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Whitney Williams Frahm<br> 
+                            Tel: 212-522-0803<br>
+                            Whitney.Frahm@travelandleisure.com <br>
+                            <br>
+                            
+                            <span class="contactGrey">Assistant</span><br>
+                            Cristina Lastres <br>
+                            Tel: 212-522-0376 <br>
+                            Cristina.Lastres@travelandleisure.com<br>
+                            <br>
+                            
+                            <span class="contactGrey">Assistant</span><br>
+                            Rachel Josey<br>
+                            Tel: 212-522-1440<br>
+                            <br>
+                            
+                            <span class="contactGrey">Assistant</span><br>
+                            Margeau Barnes<br>
+                            Tel: 212-522-2361 <br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span><br><br>
+                            <span class="contactBoldBlack">NEW ENGLAND</span><br>
+                            Lange Media<br>
+                            1344 Main Street<br>
+                            Waltham, MA 02451<br>
+                            Tel: 718-642-0400<br>
+                            Fax: 718-373-3681 <br>
+                            <br>
+                            <span class="contactGrey">Account Director</span><br>
+                            Eric Lange<br>
+                            erklange@aim.com<br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span><br><br>
+                            <span class="contactBoldBlack">TORONTO/CANADA</span><br>
+                            Redden Media Solutions<br>
+                            #11 - 525 Balliol Street  <br>
+                            Toronto, Ontario M4S 1E1 <br>
+                            Canada<br>
+                            Tel: 647-342-2261<br>
+                            Fax: 647-343-0825<br>
+                            <br>
+                            <span class="contactGrey">Regional Director</span><br>
+                            Jim Redden<br>
+                            Cell: 647-346-5353<br>
+                            jim@reddenmediasolutions.com <br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span><br><br>
+                            <span class="contactBoldBlack">ATLANTA</span><br>
+                            The DiCarlo Group<br>
+                            320 Maxwell Road, Suite 400<br>
+                            Alpharetta, GA, 30004<br>
+                            Tel: 770-667-9500<br>
+                            Fax: 770-667-9700 <br>
+                            <br>
+                            <span class="contactGrey">President + CEO</span><br>
+                            Tim DiCarlo<br>
+                            Tim@dicarlogroup.com<br>
+                            <br>
+                            
+                            </p>
+                      </article>
+                        <!--/#TLPrintContact1-->
+                        <article id="TLPrintContact2">
+                        	<p>
+                                                        
+                            <span class="contactRed">FLORIDA, CENTRAL &amp;<br>SOUTH AMERICA, AND THE<br>CARIBBEAN</span><br><br><br>
+                            <span class="contactBoldBlack">MIAMI</span><br>
+                            Blue Group Media<br>
+                            7301 SW 57th Court, Suite 570<br>
+                            Miami, FL 33143<br>
+                            Tel: 305-648-3338<br>
+                            Fax: 305-648-3349 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            <span class="contactGrey">Regional Director</span><br>
+                            Jill Stone <br>
+                            jstone@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Senior Account Manager</span><br>
+                            Eric Davis<br>
+                            edavis@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Account Manager</span><br>
+                            Rachel Sanders<br>
+                            rsanders@bluegroumedia.com <br>
+                            <br>
+                            <span class="contactGrey">Sales Coordinator</span><br>
+                            Susan Baxter<br>
+                            sbaxter@bluegroupmedia.com <br>
+                            <br>
+                            <span class="contactBoldBlack">MEXICO CITY</span><br>
+                            ADV Media Group<br>
+                            Sa De CV Homero 538-201<br>
+                            Polanco Mexico, DF CP11550<br>
+                            Tel: +52.55.5202.6412/6376 ext. 102<br>
+                            Fax: +52.55.5202.5684 <br>
+                            <br>
+                            <span class="contactGrey">Account Director</span><br>
+                            Pablo Glogovsky<br>
+                            Pablo@advmediagroup.com <br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span>
+                            <span class="contactRed">MIDWEST</span><br><br>
+                            <span class="contactBoldBlack">CHICAGO/DALLAS</span><br>
+                            Miller Dixon Media<br>
+                            625 North Michigan Avenue<br>
+                            Suite 250<br>
+                            Chicago, IL 60611<br>
+                            Tel: 312-440-6900<br>
+                            Fax: 312-440-4993<br>
+                            <br>
+                            <span class="contactGrey">Midwest Director</span><br>
+                            Kate Dixon<br>
+                            Tel: 312-440-6901<br>
+							Cell: 312-550-6900<br>
+                            kate@millerdixon.com <br>
+                            <br>
+                            <span class="contactGrey">Midwest Manager</span><br>
+                            Hillary Pavia <br>
+                            Tel: 312-440-6906<br>
+                            Cell: 804-366-7969<br>
+                            hillary@MillerMediaSales.com<br>
+                            <br>
+                            <span class="contactGrey">Sales Associate</span><br>
+                            Libby Liesveld<br>
+                            Tel: 312-440-6905<br>
+                            libby@MillerMediaSales.com<br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span><br><br>
+                            
+                            <span class="contactBoldBlack">DETROIT</span><br>
+                            Travel + Leisure<br>
+                            39577 Woodward Avenue <br>
+                            Suite 200 <br>
+                            Bloomfield Hills, MI 48304<br>
+                            Tel: 248-988-7763 <br>
+                            Fax: 248-988-7925 <br>
+                            <br>
+                            
+                            <span class="contactGrey">Detroit Director</span><br>
+                            Diane Paglino<br>
+                            Tel: 248-988-7740<br>
+                            Diane.paglino@timeinc.com<br>
+                            <br>
+                            <span class="contactGrey">Detroit Director</span><br>
+                            Lyn Kennedy <br>
+                            Tel: 248-988-7768<br>
+                            Lyn.kennedy@timeinc.com<br>
+                            <br>
+                            <span class="contactGrey">Assistant</span><br>
+                            Nichole Livingston <br>
+                            Tel: 248-988-7763<br>
+                            nichole.livingston@timeinc.com <br>
+                            <br>
+                            
+                            </p>
+                        </article>
+                        <!--/#TLPrintContact2-->
+                        <article id="TLPrintContact3">
+                        	<p>
+                        	
+                            <span class="contactBoldBlack">TEXAS</span><br>
+                            Milligan Media<br>
+                            3710 Rawlins Street, Suite 1010<br>
+                            Dallas, TX 75219<br>
+                            Tel: 214.368.2001<br>
+                            <br>
+                            
+                            <span class="contactGrey">Regional Director</span><br>
+                            Shari Covens<br>
+                            SCovens@milliganmedia.com<br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span><br>
+                            <span class="contactRed">WEST COAST</span><br>
+                            <span class="contactBoldBlack">LOS ANGELES</span><br>
+                            Travel + Leisure<br>
+                            11766 Wilshire Blvd.<br>
+                            17th Floor<br>
+                            Los Angeles, CA 90025<br>
+                            Tel: 310-268-7200<br>
+                            Fax: 310-268-7604 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            <span class="contactGrey">Director of Emerging Markets</span><br>
+                            Kristin Nicholas<br>
+                            Tel: 310-268-7421 <br>
+                            Kristin.Nicholas@travelandleisure.com <br>
+                            <br>
+                            
+                            <span class="contactGrey">Assistant</span><br>
+                            Madison Dahlke<br>
+                            Tel: 310-268-7492<br>
+                            Madison.Dahlke@timeinc.com<br>
+                            <br>
+                            <span class="contactBoldBlack">SAN FRANCISCO</span><br>
+                            SD Media<br>
+                            Two Embarcadero Center, 19th Floor<br>
+                            San Francisco, CA 94111<br>
+                            Tel: 415-496-2700<br>
+                            <br>
+                            <span class="contactGrey">Northwest Director</span><br>
+                            Steve Dveris<br>
+                            sdveris@sdmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Northwest Manager</span><br>
+                            Kelly Wagner<br>
+                            kwagner@sdmedia.com <br>
+                            <br>
+                            <span class="contactGrey">Sales Assistant</span><br>
+                            Amy Kinney<br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span><br>
+                            <span class="contactRed">HAWAII</span><br>
+                            Sunn Media LLC<br>
+                            2225 Piimauna Street<br>
+                            Honolulu, HI 96821<br>
+                            Tel: 808-377-1900<br>
+                            Fax: 808-377-1995 <br>
+                            <br>
+                            <span class="contactGrey">Sales</span><br>
+                            Liane Sunn<br>
+                            liane@sunnmedia.com <br>
+                            <br>
+                            <span class="TLPrintContactDivider">&nbsp;</span><br>
+                            <span class="contactRed">LONDON</span><br>
+                            Publicitas Ltd<br>
+                            60 Buckingham Palace Road<br>
+                            London SW1W 0AH<br>
+                            United Kingdom<br>
+                            Tel: +44-203-263-6100<br>
+                            <br>
+                            <span class="contactGrey">Head of Luxury</span><br>
+                            Tullia Vitturi di Este- Lochra<br>
+                            Tel: +44 20 3263 6122<br>
+                            tullia.vitturi-lochra@publicitas.com<br>
+                            <br>
+                            
+                            <span class="TLPrintContactDivider">&nbsp;</span><br>
+                            <span class="contactRed">ITALY</span><br>
+                            Publicitas International S.p.a.<br>
+                            Via Borsieri
+                            28 22100 Como<br>
+                            Italy<br>
+                            Tel: +39-031267797<br>
+                            <br>
+                            <span class="contactGrey">Head of Luxury</span><br>
+                            Tullia Vitturi di Este- Lochra<br>
+                            Tel: +44 20 3263 6122<br>
+                            Cell: +44 7833 451 226<br>
+                            tullia.vitturi-lochra@publicitas.com<br>
+                            <br>
+                            <span class="contactGrey">Managing Director</span><br>
+                            Emilio Zerboni<br>
+                            emilio.zerboni@publicitas.com<br>
+                            <br>
+							</p>
+                        </article>
+                        <!--/#TLPrintContact3-->
+                    </article>
+                    <!--/#TLPrintContactsContainer-->
+                
+                </article>
+                <!--/#TLTabletContacts-->
+            </article>
+            <!--/#TLRightContainer -->
+            <article class="clear">
+            </article>
+        	<!--/.clear-->
+        </section>
+        <!--/#TLTabletContainer-->
+       <footer>
+        <p>
+        <script language="javascript" type="text/javascript" src="footer.txt"></script>
+        </p>
+        </footer>
+    </section>
+	<!--/TLMainWrapper -->
+
+<!-- Begin AmexPub Google Analytics code --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3516775-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End AmexPub Google Analytics code -->
+
+<!-- omniture tag begins -->
+<div id="omniture" style="display:none">
+<script type="text/javascript">
+var s_account = "timetravelandleisure"; // timetravelandleisure for prod
+</script>
+<script type="text/javascript" src="http://www.travelandleisure.com/sites/all/modules/custom/ti_amg_tl_omniture/_tl_track.js"></script>
+<script type="text/javascript">
+s_time.pageName = "tl|microsites|tlmediakit|TLMEDIAKIT"; // page name
+s_time.prop5 = "microsites|tlmediakit"; // subchannel
+s_time.prop15 = "microsite" // content type
+s_time.prop16 = "microsites"; // site channel
+/************* PAGE CALL **************/
+var s_code=s_time.t();if(s_code){document.write(s_code);}
+</script>
+</div>
+<!-- omniture tag ends -->
+
+</body>
+</html>
